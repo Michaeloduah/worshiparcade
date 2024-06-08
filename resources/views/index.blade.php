@@ -1,322 +1,1555 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Worship Arcade</title>
-        <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
-        <link rel="stylesheet" href="{{asset('assets/css/responsiveness.css')}}">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"></link>
-        <script defer type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
-        <script defer nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
-        <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script defer src="{{asset('assets/main.js')}}"></script>
-    </head>
-    <body>
-    <header style="background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.75) 20.23%, rgba(44, 6, 29, 0.75) 100%), url('./public/assets/images/hero.png')">
-    <div class="wrapper navbar">
-        <a href="#" class="logo"><img src="{{ asset('assets/images/logo.svg') }}" alt="Logo"></a>
-    
-        <nav>
-            <img src="{{ asset('assets/images/close.svg') }}" class="close-btn" alt="Close">
-            <ul>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#ourapp">Our App</a></li>
-                <li><a href="#whoweare">Who we are</a></li>
-                <li><a href="#locateus">Locate us</a></li>
-            </ul>
-        </nav>
 
-        <div class="mobile-cart-menu">
+<html lang="zxx">
+  <head>
+    <!-- Meta Options -->
 
-            <a href="https://api.whatsapp.com/send?phone=2348146046680&text=Hello%20WorshipArcade!%20I%20recently%20visited%20your%20church%27s%20website%20and%20I%27m%20interested%20in%20learning%20more%20about%20your%20community%20and%20activities.%20I%20have%20a%20few%20questions%20and%20would%20love%20to%20connect%20with%20someone%20from%20the%20church." class="btn-main">
-                Contact us
-            </a>
-            <img src="{{ asset('assets/images/menu.svg') }}" class="menu-btn" alt="Hamburger Menu">
-        </div>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+
+    <title>Worship Arcade</title>
+
+    <!-- Bootstrap -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+      href="{{ ass }}"
+    />
+
+    <!-- Favicon -->
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/pastor-icon.webp"
+    />
+
+    <!-- Slick Slider -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+
+    <!-- Animate -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" />
+
+    <!-- Animate on scroll -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
+
+    <!-- Fancy Box -->
+
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+
+    <!-- Stylesheet -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Colors -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/color.css" />
+
+    <!-- Responsive -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Loader Start -->
+    <div class="preloader" id="preloader">
+      <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+        <path
+          d="M0,0 C305.333333,0 625.333333,0 960,0 C1294.66667,0 1614.66667,0 1920,0 L1920,1080 C1614.66667,1080 1294.66667,1080 960,1080 C625.333333,1080 305.333333,1080 0,1080 L0,0 Z"
+        ></path>
+      </svg>
+      <div class="inner">
+        <canvas
+          class="progress-bar"
+          id="progress-bar"
+          width="200"
+          height="200"
+        ></canvas>
+        <figure><img src="assets/images/icon-white.png" alt="Image" /></figure>
+        <small>Loading</small>
+      </div>
+      <!-- end inner -->
     </div>
-    <section class="hero">
-        <div class="welcome-text">
-            <h1>WORSHIP ARCADE</h1> 
-           <h3>(THE COMMUNITY CHURCH, ASABA)</h3>
+
+    <!-- Loader End -->
+
+    <!-- Header One Start -->
+
+    <header class="header-one">
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9">
+              <ul class="login">
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/bell.svg" alt="Bell" />One in
+                    Christ Jesus, engaged in parent’s mission, empowered by the
+                    Spirit.</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 offset-1">
+              <ul class="social-medias">
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="JavaScript:void(0)"
+                    ><img src="assets/images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="hero-text">
-            Where we believe in sharing the love of God with everyone we
-            meet, Whether you're a long-time member of our congregation
-            or a first-time visitor, you are not too small for us to know you neither
-            are we too big to identify with you.
+      </div>
+
+      <div class="desktop-nav" id="stickyHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav>
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/church-logo.png" alt="Logo" />
+                  </a>
+                </div>
+
+                <div class="nav-bar">
+                  <ul>
+                    <li class="menu-item-has-children">
+                      <a href="">Home</a>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                      <a href="JavaScript:void(0)">Sermons</a>
+
+                      <ul class="sub-menu">
+                        <li><a href="sermons.html">Our Sermons</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                      <a href="JavaScript:void(0)">Events</a>
+
+                      <ul class="sub-menu">
+                        <li><a href="events.html">Our Events</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                      <a href="JavaScript:void(0)">Devotionals</a>
+
+                      <ul class="sub-menu">
+                        
+                        <li><a href="blog.html">Our Devotions</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="contact-us.html">Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="donation">
+                  <a href="shop.html" class="pr-cart">
+                    <svg
+                      id="Shoping-bags"
+                      enable-background="new 0 0 512 512"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+
+                  
+
+                  <a
+                    href="JavaScript:void(0)"
+                    class="theme-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    >Give Now</a
+                  >
+                </div>
+
+                <div id="nav-icon4">
+                  <span></span>
+
+                  <span></span>
+
+                  <span></span>
+                </div>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div class="hero-btn">
-            <a href="#locateus" class="btn-main">
-                Worship with us
+      </div>
+
+      <div class="mobile-nav" id="mobile-nav">
+        <div class="res-log">
+          <a href="index.html">
+            <img src="assets/images/church-logo.png" alt="Responsive Logo" />
+          </a>
+        </div>
+
+        <ul>
+          <li class="menu-item-has-children">
+            <a href="">Home</a>
+          </li>
+
+          <li class="menu-item-has-children">
+            <a href="JavaScript:void(0)">Sermons</a>
+
+            <ul class="sub-menu">
+              <li><a href="sermons.html">Our Sermons</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item-has-children">
+            <a href="JavaScript:void(0)">Events</a>
+
+            <ul class="sub-menu">
+              <li><a href="events.html">Our Events</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-item-has-children">
+            <a href="JavaScript:void(0)">Devotionals</a>
+
+            <ul class="sub-menu">
+              <!-- Third Level Menu Html Code -->
+              
+              <li><a href="404.html">Our Devotions</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+
+        <a href="JavaScript:void(0)" id="res-cross"></a>
+      </div>
+    </header>
+    <!-- Header One Start -->
+
+    <!-- Hero One here -->
+
+    <section class="hero-one">
+      <div class="hero-one-slider">
+        <div>
+          <img src="assets/images/hero-image.png" alt="hero-one-slider" />
+          <div class="hero-data text-center">
+            <h1>
+              Worship That<br />
+              is Pleasing to God
+            </h1>
+            <p>God has given us power and authority.</p>
+          </div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner part end -->
+
+    <!-- Hero One End -->
+
+    <!-- Fellowship Start -->
+
+    <section class="gap fellowship">
+      <div class="container">
+        <h2 class="text-center mx-auto">
+          We Gather for Inspiration, Fellowship, and Guidance in the of
+          Christian Discipleship.
+        </h2>
+
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="400"
+          >
+            <div class="offer text-center">
+              <span>
+                <img src="assets/images/wedding.svg" alt="Wedding" />
+              </span>
+
+              <h3><a href="JavaScript:void(0)">Praise & Worship</a></h3>
+
+              <p class="mx-auto">
+                Our church is open and friendly with many social activities. To
+                keep our church running smoothly.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="700"
+          >
+            <div class="offer text-center">
+              <span>
+                <img src="assets/images/pray.svg" alt="Pray" />
+              </span>
+
+              <h3><a href="JavaScript:void(0)">Connect Members</a></h3>
+
+              <p class="mx-auto">
+                Our church is open and friendly with many social activities. To
+                keep our church running smoothly.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 col-sm-12"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="800"
+          >
+            <div class="offer text-center">
+              <span>
+                <img src="assets/images/bird.svg" alt="Bird" />
+              </span>
+
+              <h3><a href="JavaScript:void(0)">Parent’s Love</a></h3>
+
+              <p class="mx-auto">
+                Our church is open and friendly with many social activities. To
+                keep our church running smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fellowship End -->
+
+    <!-- About One Start -->
+
+    <section class="gap no-top about-one">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="about-data">
+              <h2>More About Us</h2>
+
+              <p>
+                Worship Arcade [The Community Church] Asaba held its inaugural service on the 12th day of October, 2014
+due to the mandate given by God to Rev. Peter Kola Mayah whom he sent from Lagos to Asaba to pioneer a
+unique vision for the land of Delta to the world with the clear vision of VISION:Raising Market-place
+Christains for all round societal relevance (Matt. 5:14,16). MISSION: Positive, Practical, Systematic,
+Bible-based transformation in Character, Career, Relationship & Family (2Peter 1:3). 
+              </p>
+
+              <a href="about-us.html" class="theme-btn">More About us</a>
+            </div>
+
+            <div class="about-gallery gallery">
+              <figure>
+                <img src="assets/images/wac1.png" alt="about image" />
+
+                <a data-fancybox="gallery" href="assets/images/wac1.png"
+                  ><img src="assets/images/plus.svg" alt="Plus"
+                /></a>
+              </figure>
+
+              <figure>
+                <img src="assets/images/wac2.png" alt="about image" />
+
+                <a data-fancybox="gallery" href="assets/images/wac3.png"
+                  ><img src="assets/images/plus.svg" alt="Plus 1"
+                /></a>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="prayers-slider green-bg">
+              <div>
+                <img
+                  class="img-fluid w-100"
+                  src="assets/images/wac1.png"
+                  alt="About Image"
+                />
+
+                <div class="slider-data">
+                  <h2 class="text-white">
+                    O Lord, you have searched me out and known me; you know my
+                    sitting down and my rising up.
+                  </h2>
+
+                  <h3 class="text-white">Psalm 139: 1-2</h3>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  class="img-fluid w-100"
+                  src="assets/images/wac2.png"
+                  alt="about image 1"
+                />
+
+                <div class="slider-data">
+                  <h2 class="text-white">
+                    Unless the Lord builds the house, those who build it labour
+                    in vain.
+                  </h2>
+
+                  <h3 class="text-white">Psalm 127: 1-2</h3>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  class="img-fluid w-100"
+                  src="assets/images/wac3.png"
+                  alt="about image 3"
+                />
+
+                <div class="slider-data">
+                  <h2 class="text-white">
+                    God is with you, wherever you may be and whatever you may
+                    choose to do.
+                  </h2>
+
+                  <h3 class="text-white">Psalm 127: 1-2</h3>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  class="img-fluid w-100"
+                  src="assets/images/wac2.png"
+                  alt="about image 4"
+                />
+
+                <div class="slider-data">
+                  <h2 class="text-white">
+                    Any concern too small to be turned into a prayer is too
+                    small to be made into a burden.
+                  </h2>
+
+                  <h3 class="text-white">Corrie Ten Boom</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About One End -->
+
+    <!-- Recent Sermons One Start -->
+
+    <section class="gap light-bg recent-sermon-one">
+      <div class="container">
+        <div class="heading">
+          <img src="assets/images/heading-img.webp" alt="Heading Image" />
+
+          <p>Scandoulous Things Jesus did in his Ministry</p>
+
+          <h2>Recent Sermons</h2>
+        </div>
+
+        <div class="row">
+          <div class="sermon" data-aos="zoom-in-right" data-aos-duration="1000">
+            <div class="sermon-img">
+              <div class="sermon-media">
+                <img src="assets/images/sermon-img.webp" alt="Sermon Image" />
+
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/uemObN8_dcw"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+
+                <div class="audio-player style2">
+                  <audio controls>
+                    <!-- <source src="audio.ogg" type="audio/ogg"> -->
+
+                    <source src="assets/music/ADULLAM.mp3" type="audio/mpeg" />
+
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <a class="s_audio" href="JavaScript:void(0)"
+                    ><img src="assets/images/music-note.svg" alt="volume"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_video" href="JavaScript:void(0)"
+                    ><img
+                      src="assets/images/play-button-2.svg"
+                      alt="Play Button"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_pdf" href="JavaScript:void(0)"
+                    ><img src="assets/images/book.svg" alt="Book"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_music" href="JavaScript:void(0)"
+                    ><img src="assets/images/download.svg" alt="download"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sermon-data">
+              <ul>
+                <li>Rev. Peter Mayah</li>
+
+                <li>Nov 19, 2021</li>
+              </ul>
+
+              <h3>
+                <a href="sermon-detail.html"
+                  >The Cave of Adullam</a
+                >
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam
+                rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo
+                inventore.
+              </p>
+            </div>
+          </div>
+
+          <div class="sermon" data-aos="zoom-in-right" data-aos-duration="1000">
+            <div class="sermon-img">
+              <div class="sermon-media">
+                <img
+                  src="assets/images/sermon-img-1.webp"
+                  alt="Sermon Image 1"
+                />
+
+                <iframe
+                  src="https://player.vimeo.com/video/182276651?h=4319e87fd1"
+                  width="640"
+                  height="360"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+
+                <div class="audio-player style2">
+                  <audio controls>
+                    <!-- <source src="audio.ogg" type="audio/ogg"> -->
+
+                    <source src="assets/music/audio-2.mp3" type="audio/mpeg" />
+
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <a class="s_audio" href="JavaScript:void(0)"
+                    ><img src="assets/images/music-note.svg" alt="volume"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_video" href="JavaScript:void(0)"
+                    ><img
+                      src="assets/images/play-button-2.svg"
+                      alt="Play Button"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_pdf" href="JavaScript:void(0)"
+                    ><img src="assets/images/book.svg" alt="Book"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_music" href="JavaScript:void(0)"
+                    ><img src="assets/images/download.svg" alt="download"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sermon-data">
+              <ul>
+                <li>Rev. Peter Mayah</li>
+
+                <li>Nov 19, 2021</li>
+              </ul>
+
+              <h3>
+                <a href="sermon-detail.html"
+                  >Spiritually Reborn As parent’s Children</a
+                >
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam
+                rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo
+                inventore.
+              </p>
+            </div>
+          </div>
+
+          <div class="sermon" data-aos="zoom-in-right" data-aos-duration="1000">
+            <div class="sermon-img">
+              <div class="sermon-media">
+                <img
+                  src="assets/images/sermon-img-2.webp"
+                  alt="Sermon Image 2"
+                />
+
+                <iframe
+                  src="https://www.dailymotion.com/embed/video/x7l8bb8?autoplay=0"
+                  width="100%"
+                  height="100%"
+                  allowfullscreen
+                >
+                </iframe>
+
+                <div class="audio-player style2">
+                  <audio controls>
+                    <!-- <source src="audio.ogg" type="audio/ogg"> -->
+
+                    <source src="assets/music/audio-3.mp3" type="audio/mpeg" />
+
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+
+              <ul>
+                <li>
+                  <a class="s_audio" href="JavaScript:void(0)"
+                    ><img src="assets/images/music-note.svg" alt="volume"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_video" href="JavaScript:void(0)"
+                    ><img
+                      src="assets/images/play-button-2.svg"
+                      alt="Play Button"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_pdf" href="JavaScript:void(0)"
+                    ><img src="assets/images/book.svg" alt="Book"
+                  /></a>
+                </li>
+
+                <li>
+                  <a class="s_music" href="JavaScript:void(0)"
+                    ><img src="assets/images/download.svg" alt="download"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sermon-data">
+              <ul>
+                <li>Rev. Peter Mayah</li>
+
+                <li>Nov 19, 2021</li>
+              </ul>
+
+              <h3>
+                <a href="sermon-detail.html"
+                  >Spiritually Reborn As parent’s Children</a
+                >
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam
+                rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo
+                inventore.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center loadmore">
+          <a href="sermons.html" class="theme-btn">Load More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Sermons One End -->
+
+
+
+    <!-- Live Stream Start -->
+
+    <section class="gap no-bottom live-stream">
+      <div class="container">
+        <div class="heading">
+          <img src="assets/images/heading-img.webp" alt="Heading Image 2" />
+
+          <p>Scandoulous Things Jesus did in his Ministry</p>
+
+          <h2>Watch our Live Stream</h2>
+        </div>
+
+        <div class="row">
+          <div class="audio-player">
+            <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+              <!-- <source src="audio.ogg" type="audio/ogg"> -->
+
+              <source
+                id="source-audio"
+                src="assets/music/audio-1.mp3"
+                type="audio/mpeg"
+              />
+
+              Your browser does not support the audio element.
+            </audio>
+
+            <div class="player-ctn" data-aos="fade-up" data-aos-duration="1000">
+              <div class="audio-run">
+                <div
+                  class="parallax"
+                  style="background-image: url(assets/images/audio.webp)"
+                ></div>
+
+                <div class="btn-ctn">
+                  <div
+                    class="btn-action first-btn next-prev"
+                    onclick="previous()"
+                  >
+                    <div id="btn-faws-back">
+                      <i class="fas fa-step-backward"></i>
+                    </div>
+                  </div>
+
+                  <div class="btn-action" onclick="toggleAudio()">
+                    <div id="btn-faws-play-pause">
+                      <i class="fas fa-play" id="icon-play"></i>
+
+                      <i
+                        class="fas fa-pause"
+                        id="icon-pause"
+                        style="display: none"
+                      ></i>
+                    </div>
+                  </div>
+
+                  <div class="btn-action next-prev" onclick="next()">
+                    <div id="btn-faws-next">
+                      <i class="fas fa-step-forward" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+                    <div id="btn-faws-volume">
+                      <i id="icon-vol-up" class="fas fa-volume-up"></i>
+
+                      <i
+                        id="icon-vol-mute"
+                        class="fas fa-volume-mute"
+                        style="display: none"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="infos-ctn">
+                  <div class="timer">00:00</div>
+
+                  <div class="title"></div>
+
+                  <div class="duration">00:00</div>
+                </div>
+
+                <div id="myProgress">
+                  <div id="myBar"></div>
+                </div>
+              </div>
+
+              <div
+                class="playlist-ctn"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center loadmore">
+          <a href="JavaScript:void(0)" class="theme-btn">View All Playlist</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Stream End -->
+
+    <!-- Events Carousal Start -->
+
+    <section class="gap events-carousal">
+      <div class="container">
+        <div class="heading">
+          <p>Our Events</p>
+
+          <h2>Don't Miss Your Chance to Get Closer to God</h2>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="events-carousal-slider">
+          <div>
+            <div class="event">
+              <img src="assets/images/events-img.webp" alt="Event Image 2" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Morning Glory</a
+                  >
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 2"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 2" />1:00 pm -
+                    2:00 pm
+                  </li>
+                </ul>
+
+                <a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="event">
+              <img src="assets/images/event-img-1.webp" alt="Event Image 3" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Prayer Rain</a
+                  >
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 3"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 3" />1:00 pm -
+                    2:00 pm
+                  </li>
+                </ul>
+                <a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="event">
+              <img src="assets/images/events-img-2.webp" alt="Event Image 4" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Morning Glory</a
+                  >
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 4"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 4" />1:00 pm -
+                    2:00 pm
+                  </li>
+                </ul>
+				<a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="event">
+              <img src="assets/images/event-img-3.webp" alt="Event Image 5" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Prayer Rain</a
+                  >
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 5"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 5" />1:00 pm -
+                    2:00 pm
+                  </li>
+				  <a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="event">
+              <img src="assets/images/events-img.webp" alt="Event Image 6" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Prayer Rain</a
+                  >
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 6"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 6" />1:00 pm -
+                    2:00 pm
+                  </li>
+                </ul>
+				<a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="event">
+              <img src="assets/images/event-img-1.webp" alt="Event Image 7" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Join us every wednesday for prayers</a
+                  >
+
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 7"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 7" />1:00 pm -
+                    2:00 pm
+                  </li>
+                </ul>
+				<a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="event">
+              <img src="assets/images/events-img-2.webp" alt="Event Image 8" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Join us every wednesday for prayers</a
+                  >
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 8"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 8" />1:00 pm -
+                    2:00 pm
+                  </li>
+                </ul>
+
+                <a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="event">
+              <img src="assets/images/event-img-3.webp" alt="Event Image 9" />
+
+              <div class="event-data">
+                <p class="text-white">Church Auditorium</p>
+
+                <h4>
+                  <a href="event-detail.html"
+                    >Join us every wednesday for prayers</a
+                  >
+                </h4>
+
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/calendar.svg"
+                      alt="calendar 9"
+                    />Thursday, June 4, 2020
+                  </li>
+
+                  <li>
+                    <img src="assets/images/clock.svg" alt="clock 9" />1:00 pm -
+                    2:00 pm
+                  </li>
+                </ul>
+				<a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Carousal End -->
+
+    <!-- Donation Start -->
+
+    <section class="donation light-bg overflow-hidden">
+      <div class="container-fluid p-0">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid sideimage"
+              src="assets/images/donation-img.webp"
+              alt="Donation Image"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              class="parallax pattren"
+              style="background-image: url(assets/images/pattren.jpg)"
+            ></div>
+            <div class="donation-data">
+              <h2 data-aos="fade-up" data-aos-duration="900">
+                Give Towards our Building project
+              </h2>
+
+              <p data-aos="fade-up" data-aos-duration="1100">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                totam rem ape eaque ipsa quae ab illo inven tore Loaperiam,
+                eaque ipsa quae ab illo invento eaqu e ipsa quae ab ille ab illo
+                inventore.
+              </p>
+
+              <div class="donation-form">
+                <div
+                  class="custom-donation-amount"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                >
+                  <span class="text-white">N</span>
+                  <input
+                    class="donated_amount"
+                    type="number"
+                    placeholder="Custom Amount"
+                  />
+                </div>
+
+                <ul
+                  class="list-unstyled"
+                  data-aos="fade-up"
+                  data-aos-duration="1400"
+                >
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">5000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">10,000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">20,000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">30,000</span></a
+                    >
+                  </li>
+                </ul>
+
+                <a
+                  class="theme-btn"
+                  href="JavaScript:void(0)"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  >Give Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation End -->
+
+    <!-- Blog Start -->
+
+    <section class="gap blog">
+      <div class="container">
+        <div class="heading">
+          <img src="assets/images/heading-img.webp" alt="Heading Image 5" />
+
+          <p>Scandoulous Things Jesus did in his Ministry</p>
+
+          <h2>Recent Devotions</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="blog-meta"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="600"
+            >
+              <figure>
+                <img
+                  class="img-fluid"
+                  src="assets/images/blog-img.webp"
+                  alt="Blog image 1"
+                />
+              </figure>
+
+              <ul>
+                <li class="date">21 Dec, 2021</li>
+              </ul>
+
+              <a href="blog-detail.html" class="font-bold"
+                >Public Health By Allowing California Order</a
+              >
+
+              <p>
+                Alienum phaedrum toquatoeu, vis detraxit iculis eiex petenis in
+                mei Mei an peri sl gra an peri sl graecis vix apernihil.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="blog-meta"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="900"
+            >
+              <figure>
+                <img
+                  class="img-fluid"
+                  src="assets/images/blog-img-2.webp"
+                  alt="Blog image 2"
+                />
+              </figure>
+
+              <ul>
+                <li class="date">21 Dec, 2021</li>
+              </ul>
+
+              <a href="blog-detail.html" class="font-bold"
+                >Public Health By Allowing California Order</a
+              >
+
+              <p>
+                Alienum phaedrum toquatoeu, vis detraxit iculis eiex petenis in
+                mei Mei an peri sl gra an peri sl graecis vix apernihil.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="blog-meta"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+            >
+              <figure>
+                <img
+                  class="img-fluid"
+                  src="assets/images/blog-img-3.webp"
+                  alt="Blog image 3"
+                />
+              </figure>
+
+              <ul>
+                <li class="date">21 Dec, 2021</li>
+              </ul>
+
+              <a href="blog-detail.html" class="font-bold"
+                >Public Health By Allowing California Order</a
+              >
+
+              <p>
+                Alienum phaedrum toquatoeu, vis detraxit iculis eiex petenis in
+                mei Mei an peri sl gra an peri sl graecis vix apernihil.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center loadmore">
+          <a href="blog.html" class="theme-btn">View All Devotions</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog End -->
+
+
+    <!-- Footer One Start -->
+
+    <footer class="gap footer-one no-bottom green-overlay">
+      <div
+        class="parallax"
+        style="background-image: url(assets/images/footer-bg.webp)"
+      ></div>
+
+      <div class="container">
+        <div class="row part-one">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <a href="index.html">
+              <img
+                class="footer-logo"
+                src="assets/images/church-logo.png"
+                alt="footer logo"
+              />
             </a>
-        </div>
-    </section>
-</header>
 
-    <main>
-    <section class="debut">
-        <section class="about wrapper">
-            <span class="subheading" id="about">About us</span>
-            <div class="heading-secondary">
-                God has been so faithful to us as a Family in all these years.
-            </div>
-            <p class="about-text">
-                Worship Arcade [The Community Church] Asaba held its inaugural service on the 12th day of October, 
-                2014 due to the mandate given by God to Rev. Peter Kola Mayah whom he sent from Lagos to Asaba to 
-                pioneer a unique vision for the land of Delta to the world with the clear vision of VISION:Raising 
-                Market-place Christains for all round societal relevance (Matt. 5:14,16). MISSION: Positive, Practical, 
-                Systematic, Bible-based transformation in Character, Career, Relationship & Family (2Peter 1:3). The 
-                church kicked off from a shop at a plaza at 32 Summit road, with about 20 members. Today, to the glory 
-                of God, the church is structured into different unit and departments with membership in some hundreds;
-                running two services in a well equipped hall at Inter-Bau Roundabout; AND STILL GROWING!!!
+            <p class="text-white">
+				CHURCH AUDITORIUM: PAMOR CENTER, Interbua
+				Roundabout, by First Bank Plc, Asaba, Delta State.
             </p>
-            <div class="swiper-container">
-                <div class="carousel swiper-wrapper">
-                    <img class="swiper-slide" src="{{ asset('assets/images/carousel.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider1.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider2.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider3.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider4.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider5.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider6.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider7.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider8.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider9.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider10.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider11.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider12.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider13.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider14.png') }}" alt="Photo of Church">
-                    <img class="swiper-slide" src="{{ asset('assets/images/slider15.png') }}" alt="Photo of Church">
-                </div>         
+
+            <div class="footer-contact">
+              <p class="text-white">
+                <span class="theme-clr">Telephone:</span> +2348146046680
+              </p>
+
+              <p class="text-white">
+                <span class="theme-clr">Telephone:</span> +2348053715200
+              </p>
             </div>
-        </section>
-    </section>
+          </div>
 
-    <section class="Financial">
-        <div class="wrapper">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h2 class="text-white">Quick Links</h2>
 
-            <span class="subheading" id="ourapp">Worship arcade app</span>
-            <div class="heading-secondary">
-                Introducing our Financial App
-            </div>
-            <div class="app-section">
-                <img class="app11" src="{{ asset('assets/images/app2.png') }}" alt="Photo of the church app" width="18%">
-                <div class="download">
-                    <div class="download-btn bounce">
-                       <a href=""><img src="{{ asset('assets/images/download1.svg') }}" alt="Our App"></a>
-                    </div>
-                    
-                    <div class="download-btn bounce">
-                        <a href=""><img src="{{ asset('assets/images/download.svg') }}" alt="Our App"></a>
-                    </div>
-                </div>
-                <img class="app22" src="{{ asset('assets/images/app3.png') }}" alt="Photo of the church app" width="18%">
-            </div>
-            
-            
-        </div>
+            <ul class="quick-links">
+              <li><a href="sermons.html">Sermons & Exhortations</a></li>
 
-        <div class="wrapper grid--4-cols" style="margin-top: 5%;">
-            <div class="features">
-                <div class="feature">
-                <ion-icon class="feature-icon" name="card-outline"></ion-icon>
-                <p class="feature-title">Easily Pay Tithe!</p>
-                <p class="feature-text">
-                    With our app, paying your tithe has never been easier. Simply enter the amount and securely submit your payment using your preferred payment method.
-                </p>
-                </div>
-                <div class="feature">
-                <ion-icon class="feature-icon" name="calendar-outline"></ion-icon>
-                <p class="feature-title">Events & News</p>
-                <p class="feature-text">
-                    Stay up to date with the latest news and events in your church community. Our app provides real-time updates on upcoming events, news, and important announcements.
-                </p>
-                </div>
-                <div class="feature">
-                <ion-icon class="feature-icon" name="receipt-outline"></ion-icon>
-                <p class="feature-title">Payment History</p>
-                <p class="feature-text">
-                    Keep track of your tithe payments with our convenient payment history feature. View your payment history anytime, anywhere, and never miss a payment again.
-                </p>
-                </div>
-                <div class="feature">
-                <ion-icon class="feature-icon" name="menu-outline"></ion-icon>
-                <p class="feature-title">Easy Access</p>
-                <p class="feature-text">
-                Easily pay your offerings, drop prophetic seeds, make donations and contribute to the church building project
-                </p>
-                </div>
+              <li><a href="our-ministries.html">Our Ministries</a></li>
 
-            </div>
-            <a href="#" class="book bounce"><img src="{{ asset('assets/images/books.png') }}" alt=""></a>
-        </div>
-    </section>
+              <li><a href="events.html">Our Events</a></li>
 
-    <section class="who">
-        <div class="wrapper" id="whoweare">
-            <span class="subheading" id="">Who we are</span>
-            <div class="heading-secondary" id="">
-                We are the Testifiers family, we believe in more
-                of God, less of Religion. Miracles Happen Here!
-                Worship with us in any of
-                our services both physical and online.
-            </div>
-            <div class="grid-images">
-                <img src="{{ asset('assets/images/grid1.png') }}" width="100%" alt="Pastors photo">
-                <img src="{{ asset('assets/images/grid.png') }}" width="100%" alt="Pastors photo">
-                <img src="{{ asset('assets/images/grid2.png') }}" width="100%" alt="Pastors photo">
-                <img src="{{ asset('assets/images/grid3.png') }}" width="100%" alt="Pastors photo">
-            </div>
-        </div>
+              <li><a href="blog.html">Devotionals</a></li>
+            </ul>
+          </div>
 
-    </section>
-    
-    <!-- Michael add your part that you have in your branch here -->
-    <section class="benediction" style="padding-top: 0%">
-        <div class="wrapper">
-            <span class="subheading" id="">Our Community</span>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <h2 class="text-white">Recent Events</h2>
 
-            <div class="grid-images">
-                
-                <div>
-                    <span class="about-text">
-                We want to create a community where everyone is welcome, grow in faith together by the power of the word of God through His servant Rev. Peter Kola Mayah. We strive to create a warm, loving and welcoming environment where you can worship God, explore what it means to follow Jesus Christ and have the feeling of being a part of big Family.
-                    </span>
-                </div>
-
-                <div class="">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/c8lXpPtCnQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
-                </div>
+            <ul class="footer-events">
+              <li>
+                <figure>
+                  <img src="assets/images/f-event-2.webp" alt="Event Image" />
+                </figure>
 
                 <div>
-                    <span class="subheading" id="">Benediction</span>
-                    <br><br>
-                    <span class="about-text">
-                        This is my day, This is my week, This is my moment, This is my time, where i failed yesterday, i will triumph this time, where i was defeated before, i cancel the defeat, every lack in my life is terminated, every negative condition is healed, every arrows from the enemy's camp, it's multiplied and returned to them, my star is shining, it cannot be deemed, i access and manifest the wisdom of God in all i do, i am fruitful in all areas of life, i will fulfill my days and purpose here on earth, This is my year of "Higher Ground(2023 year proclamation)" and my month of total Recovery(Monthly proclamation) in Jesus name. Amen 
-                    </span>
-                </div>
+                  <a href="event-detail.html"
+                    >Domestic Violence and Impact on Ministry</a
+                  >
 
-                <div class="papa">
-                    <img src="{{ asset('assets/images/papa.png') }}" alt="papa">
+                  <p class="post-date">Thrusday, june 4, 2021</p>
                 </div>
-            </div>
+              </li>
+
+              <li>
+                <figure>
+                  <img src="assets/images/f-event.webp" alt="Event Image 2" />
+                </figure>
+
+                <div>
+                  <a href="event-detail.html"
+                    >Support Groups: May the God Be with</a
+                  >
+
+                  <p class="post-date">Thrusday, june 4, 2021</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <!-- Michael ends here -->
 
-    <section class="locate">
-        <div class="wrapper">
-            <div class="con">
-                <span class="subheading" id="" style="width: fit-content">Locate us</span>
-            </div>
-            <div style="display: flex"> 
-                <img src="{{ asset('assets/images/marker.svg') }}" style="margin-top: -2em" alt="">
-                <span class="heading-secondary" id="diff2">
-                    CHURCH AUDITORIUM: PAMOR CENTER, Interbua Roundabout, by First Bank Plc, Asaba, Delta State.
-                </span>
-            </div>
-            <div class="car-gallery">
-                <img src="{{ asset('assets/images/carpark.png') }}" width="50%" alt="">          
-                <img src="{{ asset('assets/images/carpark2.png') }}" width="50%" alt="">          
-            </div>
+        <div class="copy-right">
+          <div class="social">
+            <ul class="social-medias">
+              <li>
+                <a href="JavaScript:void(0)"
+                  ><img src="assets/images/facebook.svg" alt="facebook"
+                /></a>
+              </li>
 
-            <div class="map">
-                <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.365561423703!2d6.700278074230262!3d6.215427526668245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043f32a0a7199a3%3A0x1126cbbdf2d2e31d!2sWorship%20Arcade!5e0!3m2!1sen!2sng!4v1680131690250!5m2!1sen!2sng" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+              <li>
+                <a href="JavaScript:void(0)"
+                  ><img src="assets/images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+
+              <li>
+                <a href="JavaScript:void(0)"
+                  ><img src="assets/images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-rights">
+            <p class="text-white">
+              © Copyright <span>2024 Worship Arcade</span>. All Rights Reserved.
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
+    </footer>
 
-    <section class="footer">
-        <div class="wrapper">
-            
-        <footer class="footer">
-            <div class="grid">
-                <div class="nav-col">
-                    <p class="footerheading">Contact us</p>
-                    <p class="footerheading">Senior Pastor</p>
-                    <p>
-                        <a class="footer-link" href="tel:+2348147631052" >08147631052</a><br />
-                        <a class="footer-link" href="tel:+2348053715200" >08053715200</a><br />
-                        <p class="footerheading">Church Line</p>
-                        <a class="footer-link"  href="tel:+2348146046680">08146046680</a><br />
-                    </p>
+    <!-- Footer One End -->
+
+    <!-- Scroll to top -->
+
+    <button id="scrollTop" class="scrollTopStick">
+      <svg viewBox="0 0 490.523 490.523" fill="#fff" height="15">
+        <path
+          style="fill: #7D0202"
+          d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047 c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136 c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z"
+        ></path>
+        <path
+          d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151 c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0 l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z"
+        ></path>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+      </svg>
+    </button>
+
+    <!-- Donation Modal -->
+    <div
+      class="modal fade donation-model"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Give Now</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="donation-data">
+              <h2>Give towards our building Project</h2>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                totam rem ape eaque.
+              </p>
+
+              <div class="donation-form">
+                <div class="custom-donation-amount">
+                  <span class="text-white">N</span>
+                  <input
+                    class="donated_amount"
+                    type="number"
+                    placeholder="Custom Amount"
+                  />
                 </div>
 
-                <div class="nav-col">
-                    <p class="footerheading">Account</p>
-                    <p>
-                        <a class="footer-link" href="#">Create account</a><br />
-                        <a class="footer-link" href="#">iOS app</a><br />
-                        <a class="footer-link" href="#">Android app</a><br />
-                    </p>
-                </div>
+                <ul class="list-unstyled aos-init aos-animate">
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">5000</span></a
+                    >
+                  </li>
 
-                <div class="nav-col">
-                    <p class="footerheading">Connect with Us</p>
-                    <p class="footer-link">Follow Us on social media and on Whatsapp</p>
-                    <ul class="footer-nav">
-                    <li><a class="footer-link" target="_blank" href="https://web.facebook.com/worshiparcade/?_rdc=1&_rdr"><img src="{{ asset('assets/images/facebook.svg') }}" alt="facebook"></a></li>
-                    <li><a class="footer-link" target="_blank" href="https://www.youtube.com/results?search_query=worship+arcade"><img src="{{ asset('assets/images/youtube.svg') }}" alt="youtube"></a></li>
-                    <li><a class="footer-link" target="_blank" href="https://www.instagram.com/worshiparcade/"><img src="{{ asset('assets/images/instagram.svg') }}" alt="instagram"></a></li>
-                    <li><a class="footer-link" target="_blank" href="https://api.whatsapp.com/send?phone=2348146046680&text=Hello%20WorshipArcade!%20I%20recently%20visited%20your%20church%27s%20website%20and%20I%27m%20interested%20in%20learning%20more%20about%20your%20community%20and%20activities.%20I%20have%20a%20few%20questions%20and%20would%20love%20to%20connect%20with%20someone%20from%20the%20church."><img src="{{ asset('assets/images/whatsapp.svg') }}" alt="whatsapp"></a></li>
-                    </ul>
-                </div>
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">10,000</span></a
+                    >
+                  </li>
 
-                <div class="nav-col">
-                    <p class="footerheading">Partner With Us</p>
-                    
-                    <p class="footerheading1">Church Building Project</p>
-                    <p>
-                        <p class="footer-links">Sterling Bank</p>
-                        <p class="footer-links">Account Number</p>
-                        <p class="footer-links">0076425542</p>
-                        
-                    </p>
-                    <hr>
-                    <p class="footerheading1">Welfare Partnership</p>
-                    <p>
-                        <p class="footer-links">FCMB</p>
-                        <p class="footer-links">Account Number</p>
-                        <p class="footer-links">0076425542</p>
-                        
-                    </p>
-                    <hr>
-                    <p class="footerheading1">Prophetic Seed</p>
-                    <p>
-                        <p class="footer-links">GT Bank</p>
-                        <p class="footer-links">Account Number</p>
-                        <p class="footer-links">0076425542</p>
-                        
-                    </p>
-                    <hr>
-                    <p class="footerheading1">Domiciliary Account</p>
-                    <p>
-                        <p class="footer-links">GT Bank</p>
-                        <p class="footer-links">Account Number</p>
-                        <p class="footer-links">0076425542</p>
-                        
-                    </p>
-                    <hr>
-                </div>
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">20,000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">30,000</span></a
+                    >
+                  </li>
+                </ul>
+
+                <a class="theme-btn" href="JavaScript:void(0)">Give Now</a>
+              </div>
             </div>
-        </footer>
-
-        <div class="" style="text-align: center;">
-         <a href="#"><img src="{{ asset('assets/images/logo.svg') }}" alt="logo"><br></a>   
+          </div>
         </div>
-        <p class="footerheading" style="text-align: center">Copyright © 2023 by Worship Arcade, Inc. All rights reserved.</p>
-        </div>
-    </section>
-</main>
+      </div>
+    </div>
 
+    <!-- Jquery -->
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 
+    <!-- Waypoint -->
+    <script src="{{ asset('assets/js/jquery.waypoints.min.js') }}"></script>
 
+    <!-- Counter -->
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
 
+    <!-- Slick Slider Js -->
+    <script src="{{ asset('assets/js/slick.min.js') }}"></script>
 
-    <!--<script src="main.js"></script>-->
-    
-</body>
+    <!-- Animate on scroll Js -->
+    <script src="{{ asset('assets/js/aos.js') }}"></script>
+
+    <!-- Fontawesome Js -->
+    <script src="{{ asset('assets/js/fontawesome.js') }}"></script>
+
+    <!-- Fancybox Js -->
+    <script src="{{ asset('assets/js/jquery.fancybox.min.js') }}"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+
+    <!-- Custom Js -->
+
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
+  </body>
 </html>

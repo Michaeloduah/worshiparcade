@@ -19,8 +19,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="assets/css/bootstrap.min.css"
-      href="{{ ass }}"
+      href="{{ asset('assets/scss/bootstrap.min.css') }}"
     />
 
     <!-- Favicon -->
@@ -28,36 +27,29 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="assets/images/pastor-icon.webp"
+      href="{{ asset('assets/img/pastor-icon.webp') }}"
     />
 
     <!-- Slick Slider -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/scss/slick.css') }}" />
 
     <!-- Animate -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/scss/animate.min.css') }}" />
 
     <!-- Animate on scroll -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/scss/aos.css') }}" />
 
     <!-- Fancy Box -->
-
-    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="{{ asset('assets/scss/jquery.fancybox.min.css') }}" />
 
     <!-- Stylesheet -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/scss/style.css') }}" />
 
     <!-- Colors -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/color.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/scss/color.css') }}" />
 
     <!-- Responsive -->
-
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/scss/responsive.css') }}" />
   </head>
 
   <body>
@@ -75,7 +67,7 @@
           width="200"
           height="200"
         ></canvas>
-        <figure><img src="assets/images/icon-white.png" alt="Image" /></figure>
+        <figure><img src="{{ asset('assets/img/icon-white.png') }}" alt="Image" /></figure>
         <small>Loading</small>
       </div>
       <!-- end inner -->
@@ -93,7 +85,7 @@
               <ul class="login">
                 <li>
                   <a href="JavaScript:void(0)"
-                    ><img src="assets/images/bell.svg" alt="Bell" />One in
+                    ><img src="{{ asset('assets/img/bell.svg') }}" alt="Bell" />One in
                     Christ Jesus, engaged in parent’s mission, empowered by the
                     Spirit.</a
                   >
@@ -105,19 +97,19 @@
               <ul class="social-medias">
                 <li>
                   <a href="JavaScript:void(0)"
-                    ><img src="assets/images/facebook.svg" alt="facebook"
+                    ><img src="{{ asset('assets/img/facebook.svg') }}" alt="facebook"
                   /></a>
                 </li>
 
                 <li>
                   <a href="JavaScript:void(0)"
-                    ><img src="assets/images/twitter.svg" alt="twitter"
+                    ><img src="{{ asset('assets/img/twitter.svg') }}" alt="twitter"
                   /></a>
                 </li>
 
                 <li>
                   <a href="JavaScript:void(0)"
-                    ><img src="assets/images/instagram.svg" alt="instagram"
+                    ><img src="{{ asset('assets/img/instagram.svg') }}" alt="instagram"
                   /></a>
                 </li>
               </ul>
@@ -133,7 +125,7 @@
               <nav>
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/church-logo.png" alt="Logo" />
+                    <img src="{{ asset('assets/img/church-logo.png') }}" alt="Logo" />
                   </a>
                 </div>
 
@@ -215,7 +207,7 @@
       <div class="mobile-nav" id="mobile-nav">
         <div class="res-log">
           <a href="index.html">
-            <img src="assets/images/church-logo.png" alt="Responsive Logo" />
+            <img src="{{ asset('assets/img/church-logo.png') }}" alt="Responsive Logo" />
           </a>
         </div>
 
@@ -263,7 +255,7 @@
     <section class="hero-one">
       <div class="hero-one-slider">
         <div>
-          <img src="assets/images/hero-image.png" alt="hero-one-slider" />
+          <img src="{{ asset('assets/img/hero-image.png') }}" alt="hero-one-slider" />
           <div class="hero-data text-center">
             <h1>
               Worship That<br />
@@ -301,7 +293,7 @@
           >
             <div class="offer text-center">
               <span>
-                <img src="assets/images/wedding.svg" alt="Wedding" />
+                <img src="{{ asset('assets/img/wedding.svg') }}" alt="Wedding" />
               </span>
 
               <h3><a href="JavaScript:void(0)">Praise & Worship</a></h3>
@@ -321,7 +313,7 @@
           >
             <div class="offer text-center">
               <span>
-                <img src="assets/images/pray.svg" alt="Pray" />
+                <img src="{{ asset('assets/img/pray.svg') }}" alt="Pray" />
               </span>
 
               <h3><a href="JavaScript:void(0)">Connect Members</a></h3>
@@ -341,7 +333,7 @@
           >
             <div class="offer text-center">
               <span>
-                <img src="assets/images/bird.svg" alt="Bird" />
+                <img src="{{ asset('assets/img/bird.svg') }}" alt="Bird" />
               </span>
 
               <h3><a href="JavaScript:void(0)">Parent’s Love</a></h3>
@@ -380,18 +372,18 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
             <div class="about-gallery gallery">
               <figure>
-                <img src="assets/images/wac1.png" alt="about image" />
+                <img src="{{ asset('assets/img/wac1.png') }}" alt="about image" />
 
-                <a data-fancybox="gallery" href="assets/images/wac1.png"
-                  ><img src="assets/images/plus.svg" alt="Plus"
+                <a data-fancybox="gallery" href="{{ asset('assets/img/wac1.png') }}"
+                  ><img src="{{ asset('assets/img/wac1.png') }}" alt="Plus"
                 /></a>
               </figure>
 
               <figure>
-                <img src="assets/images/wac2.png" alt="about image" />
+                <img src="{{ asset('assets/img/wac3.png') }}" alt="about image" />
 
-                <a data-fancybox="gallery" href="assets/images/wac3.png"
-                  ><img src="assets/images/plus.svg" alt="Plus 1"
+                <a data-fancybox="gallery" href="{{ asset('assets/img/wac3.png') }}"
+                  ><img src="{{ asset('assets/img/wac3.png') }}" alt="Plus 1"
                 /></a>
               </figure>
             </div>
@@ -402,7 +394,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <div>
                 <img
                   class="img-fluid w-100"
-                  src="assets/images/wac1.png"
+                  src="{{ asset('assets/img/wac1.png') }}"
                   alt="About Image"
                 />
 
@@ -419,7 +411,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <div>
                 <img
                   class="img-fluid w-100"
-                  src="assets/images/wac2.png"
+                  src="{{ asset('assets/img/wac1.png') }}"
                   alt="about image 1"
                 />
 
@@ -436,7 +428,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <div>
                 <img
                   class="img-fluid w-100"
-                  src="assets/images/wac3.png"
+                  src="{{ asset('assets/img/wac3.png') }}"
                   alt="about image 3"
                 />
 
@@ -453,7 +445,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <div>
                 <img
                   class="img-fluid w-100"
-                  src="assets/images/wac2.png"
+                  src="{{ asset('assets/img/wac3.png') }}"
                   alt="about image 4"
                 />
 
@@ -479,7 +471,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
     <section class="gap light-bg recent-sermon-one">
       <div class="container">
         <div class="heading">
-          <img src="assets/images/heading-img.webp" alt="Heading Image" />
+          <img src="{{ asset('assets/img/heading-img.webp') }}" alt="Heading Image" />
 
           <p>Scandoulous Things Jesus did in his Ministry</p>
 
@@ -490,7 +482,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
           <div class="sermon" data-aos="zoom-in-right" data-aos-duration="1000">
             <div class="sermon-img">
               <div class="sermon-media">
-                <img src="assets/images/sermon-img.webp" alt="Sermon Image" />
+                <img src="{{ asset('assets/img/sermon-img.webp') }}" alt="Sermon Image" />
 
                 <iframe
                   width="560"
@@ -505,7 +497,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   <audio controls>
                     <!-- <source src="audio.ogg" type="audio/ogg"> -->
 
-                    <source src="assets/music/ADULLAM.mp3" type="audio/mpeg" />
+                    <source src="{{ asset('assets/music/ADULLAM.mp3') }}" type="audio/mpeg" />
 
                     Your browser does not support the audio element.
                   </audio>
@@ -515,27 +507,27 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>
                   <a class="s_audio" href="JavaScript:void(0)"
-                    ><img src="assets/images/music-note.svg" alt="volume"
+                    ><img src="{{ asset('assets/img/music-note.svg') }}" alt="volume"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_video" href="JavaScript:void(0)"
                     ><img
-                      src="assets/images/play-button-2.svg"
+                      src="{{ asset('assets/img/play-button-2.svg') }}"
                       alt="Play Button"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="assets/images/book.svg" alt="Book"
+                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="assets/images/download.svg" alt="download"
+                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
                   /></a>
                 </li>
               </ul>
@@ -566,7 +558,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
             <div class="sermon-img">
               <div class="sermon-media">
                 <img
-                  src="assets/images/sermon-img-1.webp"
+                  src="{{ asset('assets/img/sermon-img-1.webp') }}"
                   alt="Sermon Image 1"
                 />
 
@@ -582,7 +574,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   <audio controls>
                     <!-- <source src="audio.ogg" type="audio/ogg"> -->
 
-                    <source src="assets/music/audio-2.mp3" type="audio/mpeg" />
+                    <source src="{{ asset('assets/music/audio-2.mp3') }}" type="audio/mpeg" />
 
                     Your browser does not support the audio element.
                   </audio>
@@ -592,27 +584,27 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>
                   <a class="s_audio" href="JavaScript:void(0)"
-                    ><img src="assets/images/music-note.svg" alt="volume"
+                    ><img src="{{ asset('assets/img/music-note.svg') }}" alt="volume"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_video" href="JavaScript:void(0)"
                     ><img
-                      src="assets/images/play-button-2.svg"
+                      src="{{ asset('assets/img/play-button-2.svg') }}"
                       alt="Play Button"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="assets/images/book.svg" alt="Book"
+                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="assets/images/download.svg" alt="download"
+                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
                   /></a>
                 </li>
               </ul>
@@ -643,7 +635,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
             <div class="sermon-img">
               <div class="sermon-media">
                 <img
-                  src="assets/images/sermon-img-2.webp"
+                  src="{{ asset('assets/img/sermon-img-2.webp') }}"
                   alt="Sermon Image 2"
                 />
 
@@ -659,7 +651,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   <audio controls>
                     <!-- <source src="audio.ogg" type="audio/ogg"> -->
 
-                    <source src="assets/music/audio-3.mp3" type="audio/mpeg" />
+                    <source src="{{ asset('assets/music/audio-3.mp3') }}" type="audio/mpeg" />
 
                     Your browser does not support the audio element.
                   </audio>
@@ -669,27 +661,27 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>
                   <a class="s_audio" href="JavaScript:void(0)"
-                    ><img src="assets/images/music-note.svg" alt="volume"
+                    ><img src="{{ asset('assets/img/music-note.svg') }}" alt="volume"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_video" href="JavaScript:void(0)"
                     ><img
-                      src="assets/images/play-button-2.svg"
+                      src="{{ asset('assets/img/play-button-2.svg') }}"
                       alt="Play Button"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="assets/images/book.svg" alt="Book"
+                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
                   /></a>
                 </li>
 
                 <li>
                   <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="assets/images/download.svg" alt="download"
+                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
                   /></a>
                 </li>
               </ul>
@@ -732,7 +724,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
     <section class="gap no-bottom live-stream">
       <div class="container">
         <div class="heading">
-          <img src="assets/images/heading-img.webp" alt="Heading Image 2" />
+          <img src="{{ asset('assets/img/heading-img.webp') }}" alt="Heading Image 2" />
 
           <p>Scandoulous Things Jesus did in his Ministry</p>
 
@@ -746,7 +738,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
               <source
                 id="source-audio"
-                src="assets/music/audio-1.mp3"
+                src="{{ asset('assets/music/audio-1.mp3') }}"
                 type="audio/mpeg"
               />
 
@@ -757,7 +749,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <div class="audio-run">
                 <div
                   class="parallax"
-                  style="background-image: url(assets/images/audio.webp)"
+                  style="background-image: url{{ asset('assets/img/audio.webp') }}"
                 ></div>
 
                 <div class="btn-ctn">
@@ -846,7 +838,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
         <div class="events-carousal-slider">
           <div>
             <div class="event">
-              <img src="assets/images/events-img.webp" alt="Event Image 2" />
+              <img src="{{ asset('assets/img/events-img.webp') }}" alt="Event Image 2" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -860,13 +852,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 2"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 2" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 2" />1:00 pm -
                     2:00 pm
                   </li>
                 </ul>
@@ -878,7 +870,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
           <div>
             <div class="event">
-              <img src="assets/images/event-img-1.webp" alt="Event Image 3" />
+              <img src="{{ asset('assets/img/event-img-1.webp') }}" alt="Event Image 3" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -892,13 +884,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 3"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 3" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 3" />1:00 pm -
                     2:00 pm
                   </li>
                 </ul>
@@ -909,7 +901,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
           <div>
             <div class="event">
-              <img src="assets/images/events-img-2.webp" alt="Event Image 4" />
+              <img src="{{ asset('assets/img/events-img-2.webp') }}" alt="Event Image 4" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -923,13 +915,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 4"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 4" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 4" />1:00 pm -
                     2:00 pm
                   </li>
                 </ul>
@@ -940,7 +932,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
           <div>
             <div class="event">
-              <img src="assets/images/event-img-3.webp" alt="Event Image 5" />
+              <img src="{{ asset('assets/img/event-img-3.webp') }}" alt="Event Image 5" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -954,13 +946,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 5"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 5" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 5" />1:00 pm -
                     2:00 pm
                   </li>
 				  <a class="theme-btn" href="JavaScript:void(0)">View Event Details</a>
@@ -971,7 +963,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
           <div>
             <div class="event">
-              <img src="assets/images/events-img.webp" alt="Event Image 6" />
+              <img src="{{ asset('assets/img/events-img.webp') }}" alt="Event Image 6" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -985,13 +977,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 6"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 6" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 6" />1:00 pm -
                     2:00 pm
                   </li>
                 </ul>
@@ -1002,7 +994,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
           <div>
             <div class="event">
-              <img src="assets/images/event-img-1.webp" alt="Event Image 7" />
+              <img src="{{ asset('assets/img/event-img-1.webp') }}" alt="Event Image 7" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -1017,13 +1009,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 7"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 7" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 7" />1:00 pm -
                     2:00 pm
                   </li>
                 </ul>
@@ -1034,7 +1026,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
           <div>
             <div class="event">
-              <img src="assets/images/events-img-2.webp" alt="Event Image 8" />
+              <img src="{{ asset('assets/img/events-img-2.webp') }}" alt="Event Image 8" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -1048,13 +1040,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 8"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 8" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 8" />1:00 pm -
                     2:00 pm
                   </li>
                 </ul>
@@ -1066,7 +1058,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
           <div>
             <div class="event">
-              <img src="assets/images/event-img-3.webp" alt="Event Image 9" />
+              <img src="{{ asset('assets/img/event-img-3.webp') }}" alt="Event Image 9" />
 
               <div class="event-data">
                 <p class="text-white">Church Auditorium</p>
@@ -1080,13 +1072,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <ul>
                   <li>
                     <img
-                      src="assets/images/calendar.svg"
+                      src="{{ asset('assets/img/calendar.svg') }}"
                       alt="calendar 9"
                     />Thursday, June 4, 2020
                   </li>
 
                   <li>
-                    <img src="assets/images/clock.svg" alt="clock 9" />1:00 pm -
+                    <img src="{{ asset('assets/img/clock.svg') }}" alt="clock 9" />1:00 pm -
                     2:00 pm
                   </li>
                 </ul>
@@ -1108,7 +1100,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
           <div class="col-lg-6">
             <img
               class="img-fluid sideimage"
-              src="assets/images/donation-img.webp"
+              src="{{ asset('assets/img/donation-img.webp') }}"
               alt="Donation Image"
             />
           </div>
@@ -1116,7 +1108,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
           <div class="col-lg-6">
             <div
               class="parallax pattren"
-              style="background-image: url(assets/images/pattren.jpg)"
+              style="background-image: url({{asset('assets/img/pattren.jpg') }})"
             ></div>
             <div class="donation-data">
               <h2 data-aos="fade-up" data-aos-duration="900">
@@ -1195,7 +1187,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
     <section class="gap blog">
       <div class="container">
         <div class="heading">
-          <img src="assets/images/heading-img.webp" alt="Heading Image 5" />
+          <img src="{{ asset('assets/img/heading-img.webp') }}" alt="Heading Image 5" />
 
           <p>Scandoulous Things Jesus did in his Ministry</p>
 
@@ -1213,7 +1205,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <figure>
                 <img
                   class="img-fluid"
-                  src="assets/images/blog-img.webp"
+                  src="{{ asset('assets/img/blog-img.webp') }}"
                   alt="Blog image 1"
                 />
               </figure>
@@ -1243,7 +1235,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <figure>
                 <img
                   class="img-fluid"
-                  src="assets/images/blog-img-2.webp"
+                  src="{{ asset('assets/img/blog-img-2.webp) }}"
                   alt="Blog image 2"
                 />
               </figure>
@@ -1273,7 +1265,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <figure>
                 <img
                   class="img-fluid"
-                  src="assets/images/blog-img-3.webp"
+                  src="{{ asset('assets/img/blog-img-3.webp') }}"
                   alt="Blog image 3"
                 />
               </figure>
@@ -1308,7 +1300,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
     <footer class="gap footer-one no-bottom green-overlay">
       <div
         class="parallax"
-        style="background-image: url(assets/images/footer-bg.webp)"
+        style="background-image: url({{ asset('assets/img/footer-bg.webp') }})"
       ></div>
 
       <div class="container">
@@ -1317,7 +1309,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
             <a href="index.html">
               <img
                 class="footer-logo"
-                src="assets/images/church-logo.png"
+                src="{{ asset('assets/img/church-logo.png') }}"
                 alt="footer logo"
               />
             </a>
@@ -1358,7 +1350,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
             <ul class="footer-events">
               <li>
                 <figure>
-                  <img src="assets/images/f-event-2.webp" alt="Event Image" />
+                  <img src="{{ asset('assets/img/f-event-2.webp') }}" alt="Event Image" />
                 </figure>
 
                 <div>
@@ -1372,7 +1364,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
               <li>
                 <figure>
-                  <img src="assets/images/f-event.webp" alt="Event Image 2" />
+                  <img src="{{ asset('assets/img/f-event.webp') }}" alt="Event Image 2" />
                 </figure>
 
                 <div>
@@ -1392,19 +1384,19 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
             <ul class="social-medias">
               <li>
                 <a href="JavaScript:void(0)"
-                  ><img src="assets/images/facebook.svg" alt="facebook"
+                  ><img src="{{ asset('assets/img/facebook.svg') }}" alt="facebook"
                 /></a>
               </li>
 
               <li>
                 <a href="JavaScript:void(0)"
-                  ><img src="assets/images/twitter.svg" alt="twitter"
+                  ><img src="{{ asset('assets/img/twitter.svg') }}" alt="twitter"
                 /></a>
               </li>
 
               <li>
                 <a href="JavaScript:void(0)"
-                  ><img src="assets/images/instagram.svg" alt="instagram"
+                  ><img src="{{ asset('assets/img/instagram.svg') }}" alt="instagram"
                 /></a>
               </li>
             </ul>

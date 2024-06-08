@@ -1235,7 +1235,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <figure>
                 <img
                   class="img-fluid"
-                  src="{{ asset('assets/img/blog-img-2.webp) }}"
+                  src="{{ asset('assets/img/blog-img-2.webp') }}"
                   alt="Blog image 2"
                 />
               </figure>

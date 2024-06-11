@@ -21,11 +21,11 @@ class EventController extends Controller
      */
     public function index()
     {
-        //
-        
+        //        
+        $user = auth()->user();
         $event_categories = EventCategory::all();
         $events = Event::all();
-        return view('dashboard.news_and_event.event.index', ['events' => $events], ['event_categories' => $event_categories]);
+        return view('dashboard.news_and_event.event.index', compact('user', 'event_categories', 'events'));
     }
 
     /**
@@ -36,8 +36,9 @@ class EventController extends Controller
     public function create()
     {
         //
+        $user = auth()->user();
         $event_categories = EventCategory::all();
-        return view('dashboard.news_and_event.event.create', ['event_categories' => $event_categories]);
+        return view('dashboard.news_and_event.event.create', compact('user', 'event_categories'));
     }
 
     /**
@@ -52,7 +53,7 @@ class EventController extends Controller
         $valid = $request->validate([
             'name' => 'required',
             'description' => 'required',
-            'event_categories' => 'required|exists:event_categories,id',
+            'event_category_id' => 'required',
             'image' => 'mimes:jpg,png,jpeg,mp4',
             'date' => 'required'
         ]);
@@ -105,7 +106,7 @@ class EventController extends Controller
             $valid = $request->validate([
                 'name' => 'required',
                 'description' => 'required',
-                'event_categories' => 'required|exists:event_categories,id',
+                'event_category_id' => 'required',
                 'image' => 'mimes:jpg,png,jpeg,mp4',
                 'date' => 'required'
     

@@ -21,8 +21,9 @@ class EventCategoryController extends Controller
     public function index()
     {
         //
+        $user = auth()->user();
         $categories = EventCategory::all();
-        return view('dashboard.news_and_event.event_categories.index', ['categories' => $categories]);
+        return view('dashboard.news_and_event.event_categories.index', compact('user', 'categories'));
     }
 
     /**
@@ -33,7 +34,8 @@ class EventCategoryController extends Controller
     public function create()
     {
         //
-        return view('dashboard.news_and_event.event_categories.create');
+        $user = auth()->user();
+        return view('dashboard.news_and_event.event_categories.create', ['user' => $user]);
     }
 
     /**

@@ -11,8 +11,8 @@
         <label for="description" class="form-label">Description: </label>
         <textarea type="text" name="description" id="description" class="form-control" required></textarea>
 
-        <label for="event_categories" class="form-label">Category: </label>
-        <select name="event_categories" id="" class="form-select">
+        <label for="event_category_id" class="form-label">Category: </label>
+        <select name="event_category_id" id="" class="form-select">
             <option value="">Select Category</option>
             @foreach ($event_categories as $category )
                 <option value="{{$category->id}}">{{ $category->name}}</option>

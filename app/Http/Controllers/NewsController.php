@@ -55,9 +55,9 @@ class NewsController extends Controller
         ]);
 
         $slug = Str::slug($valid['slug'], '-');
-        $img_dir = $request->file('image')->store('images', 'public');
+        $img_dir = $request->file('image')->store('news', 'public');
 
-        News::create(array_merge($valid,['slug' => $slug, 'image' => $img_dir]));
+        News::create(array_merge($valid, ['slug' => $slug, 'image' => $img_dir]));
 
         return redirect()->intended(route('dashboard.news.index'))->with('message', 'News and Events Created Successfully');
     }
@@ -68,9 +68,11 @@ class NewsController extends Controller
      * @param  \App\Models\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function show(News $news)
+    public function show(News $news, $slug)
     {
-        //
+        $user = auth()->user();
+        $news = News::where('slug', $slug)->firstOrFail();
+        return view('dashboard.news_and_event.news.show', compact('user', 'news'));
     }
 
     /**
@@ -96,25 +98,38 @@ class NewsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-        {
-            $news = News::findOrFail($id);
-            $valid = $request->validate([
-                'title' => ['required', Rule::unique('news')->ignore($news)],
-                'description' => 'required',
-                'slug' => ['required', Rule::unique('news')->ignore($news)],
-                'image' => 'mimes:jpg,png,jpeg,mp4'
-            ]);
+        $news = News::findOrFail($id);
+        $valid = $request->validate([
+            'title' => ['nullable'],
+            'description' => ['nullable'],
+            'slug' => ['nullable'],
+            'image' => ['nullable', 'mimes:jpg,png,jpeg,mp4']
+        ]);
 
-            if ($request->hasFile('image')) {
-                $news->update(array_merge($valid, ['image' => $request->file('image')->store('user_images', 'public')]));
-            }
-            else {
-                $news->update(array_merge($valid));
-            }
-            return redirect()->intended(route('dashboard.news.index'))->with('message', 'News Successfully Updated');
+        $news->title = $request->title ?? $news->title;
+        $news->description = $request->description ?? $news->description;
+        $news->slug = $request->slug ?? $news->slug;
+        $news->image = $request->image ?? $news->image;
+
+        if ($request->hasFile('image')) {
+            $images = $request->file('image')->store('news', 'public');
+        } else {
+            $images = $news->image;
         }
+        $slug = Str::slug($valid['slug'], '-');
+
+        $update = [
+            'title' => $news->title = $request->title ?? $news->title,
+            'description' => $news->description = $request->description ?? $news->description,
+            'slug' => $slug,
+            'images' => $images,
+        ];
+        // dd($update);
+        $news->update($update);
+
+        return redirect()->intended(route('dashboard.news.index'))->with('message', 'News Successfully Updated');
     }
+
 
     /**
      * Remove the specified resource from storage.

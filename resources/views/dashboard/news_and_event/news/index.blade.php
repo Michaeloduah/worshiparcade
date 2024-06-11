@@ -27,6 +27,7 @@
                         <td> {{ $new->slug }} </td>
                         <td> <img src="{{asset('storage/'.$new->image)}}" class="img-fluid" alt=""> </td>
                         <td>
+                            <a href="{{ route('dashboard.news.show-news', $new->slug) }}"><button class="btn btn-sm btn-outline-success"><i class="bi bi-pencil-square"></i>More Details</button></a>
                             <a href="{{ route('dashboard.news.edit-news', $new->id) }}"><button class="btn btn-sm btn-outline-info"><i class="bi bi-pencil-square"></i>Edit</button></a>
                             <a href="{{ route('dashboard.news.delete-news', $new->id) }}"><button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i>Delete</button></a>
                         </td>

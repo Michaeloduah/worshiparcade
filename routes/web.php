@@ -50,13 +50,6 @@ Route::middleware('auth')->group(function () {
 
 Route::get('', [DashboardController::class, 'home'])->name('home');
 
-Route::middleware(['guest'])->group(function () {
-    // Route::get('church/admin/login', [UserController::class, 'loginPage'])->name('login');
-    // Route::post('church/admin/login', [UserController::class, 'login'])->name('loginUser');
-    // Route::get('church/admin/login', [AuthenticatedSessionController::class, 'create'])->name('login');
-    // Route::post('church/admin/login', [AuthenticatedSessionController::class, 'store'])->name('loginUser');
-    // Route::post('register', [UserController::class, 'store'])->name('register');
-});
 
 
 Auth::routes(['verify' => true]);
@@ -78,6 +71,7 @@ Route::middleware('auth', 'verified')->group(function () {
         Route::name('news.')->prefix('news')->group(function () {
             Route::get('', [NewsController::class, 'index'])->name('index');
             Route::get('add-news', [NewsController::class, 'create'])->name('add-news');
+            Route::get('show-news/{slug}', [NewsController::class, 'show'])->name('show-news');
             Route::post('news', [NewsController::class, 'store'])->name('news');
             Route::get('edit-news/{id}', [NewsController::class, 'edit'])->name('edit-news');
             Route::post('edit-news/{id}', [NewsController::class, 'update'])->name('update-news');

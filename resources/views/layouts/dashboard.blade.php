@@ -125,7 +125,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#payment" data-bs-toggle="collapse" href="#">
-                        <i class="bi bi-wallet2"></i><span>Payments</span><i class="bi bi-chevron-down ms-auto"></i>
+                        <i class="bi bi-wallet2"></i><span>Payments (done)</span><i class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="payment" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li class="nav-heading">Payments</li>
@@ -159,7 +159,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#news" data-bs-toggle="collapse" href="#">
-                      <i class="bi bi-newspaper"></i><span>News</span><i
+                      <i class="bi bi-newspaper"></i><span>News (done)</span><i
                             class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="news" class="nav-content collapse " data-bs-parent="#sidebar-nav">

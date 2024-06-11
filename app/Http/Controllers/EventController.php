@@ -59,8 +59,8 @@ class EventController extends Controller
         ]);
         $img_dir = $request->file('image')->store('images', 'public');
 
-        
-        Event::create(array_merge($valid,['image' => $img_dir]));
+
+        Event::create(array_merge($valid, ['image' => $img_dir]));
 
         return redirect()->intended(route('dashboard.event.index'))->with('message', 'Event Submitted Successfully');
     }
@@ -109,19 +109,24 @@ class EventController extends Controller
                 'event_category_id' => 'required',
                 'image' => 'mimes:jpg,png,jpeg,mp4',
                 'date' => 'required'
-    
+
             ]);
+
+            $event->name = $request->name ?? $event->name;
+            $event->description = $request->description ?? $event->description;
+            $event->event_category_id = $request->event_category_id ?? $event->event_category_id;
+            $event->image = $request->image ?? $event->image;
+            $event->date = $request->date ?? $event->date;
 
             if ($request->hasFile('image')) {
                 $event->update(array_merge($valid, ['image' => $request->file('image')->store('user_images', 'public')]));
-            }
-            else {
+            } else {
                 $event->update(array_merge($valid));
             }
-    
-    
+
+
             // dd($valid);
-            return redirect()->intended(route('dashboard.event.index'))->withInput($request->input())->with('message','Category Updated');
+            return redirect()->intended(route('dashboard.event.index'))->withInput($request->input())->with('message', 'Category Updated');
         }
     }
 

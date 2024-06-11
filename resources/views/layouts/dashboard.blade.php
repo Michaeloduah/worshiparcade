@@ -179,7 +179,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#Event" data-bs-toggle="collapse" href="#">
-                      <i class="bi bi-calendar4-event"></i></i><span>Events</span><i
+                      <i class="bi bi-calendar4-event"></i></i><span>Events (done)</span><i
                             class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="Event" class="nav-content collapse " data-bs-parent="#sidebar-nav">

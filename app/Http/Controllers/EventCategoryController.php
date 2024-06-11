@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
+use Mockery\Undefined;
 
 class EventCategoryController extends Controller
 {
@@ -71,7 +72,7 @@ class EventCategoryController extends Controller
      */
     public function show(EventCategory $eventCategory)
     {
-        //
+        
     }
 
     /**
@@ -97,16 +98,24 @@ class EventCategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
         {
         $eventCategory = EventCategory::findOrFail($id);
         $valid = $request->validate([
-            'name' => ['required', 'max:255', 'min:5'],
-            'slug' => ['required', Rule::unique('event_categories')->ignore($eventCategory)]
+            'name' => ['nullable', 'max:255', 'min:5'],
+            'slug' => ['nullable', Rule::unique('event_categories')->ignore($eventCategory)]
 
         ]);
-        $slug = Str::slug($valid['slug'], '-');
-         $eventCategory->update(array_merge($valid,['slug'=>$slug]));
+
+        $eventCategory->name = $request->name ?? $eventCategory->name;
+        $eventCategory->slug = $request->slug ?? $eventCategory->slug;
+        $slug = Str::slug($eventCategory->slug = $request->slug ?? $eventCategory->slug, '-');
+
+        $update = [
+            'name' => $eventCategory->name = $request->name ?? $eventCategory->name,
+            'slug' => $slug,
+        ];
+        
+        $eventCategory->update($update);
 
 
         // dd($valid);

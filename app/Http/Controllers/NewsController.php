@@ -116,7 +116,8 @@ class NewsController extends Controller
         } else {
             $images = $news->image;
         }
-        $slug = Str::slug($valid['slug'], '-');
+        $slug = Str::slug($news->slug = $request->slug ?? $news->slug, '-');
+        
 
         $update = [
             'title' => $news->title = $request->title ?? $news->title,
@@ -124,7 +125,6 @@ class NewsController extends Controller
             'slug' => $slug,
             'images' => $images,
         ];
-        // dd($update);
         $news->update($update);
 
         return redirect()->intended(route('dashboard.news.index'))->with('message', 'News Successfully Updated');

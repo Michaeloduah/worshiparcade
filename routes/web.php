@@ -141,3 +141,4 @@ Route::view('/give', 'pages.donation-page');
 Route::view('/event-details', 'pages.event-detail');
 Route::view('/events', 'pages.events');
 Route::view('/our-ministries', 'pages.our-ministries');
+Route::view('/pastor-detail', 'pages.pastor-detail');

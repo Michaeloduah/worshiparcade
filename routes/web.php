@@ -138,3 +138,4 @@ Route::view('/Devotional-detail', 'pages.blog-detail');
 Route::view('/Devotional', 'pages.blog');
 Route::view('/contact', 'pages.contact-us');
 Route::view('/give', 'pages.donation-page');
+Route::view('/event-details', 'pages.event-detail');

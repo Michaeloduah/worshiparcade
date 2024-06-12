@@ -131,3 +131,6 @@ Route::middleware('auth', 'verified')->group(function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Temporaray View files 
+Route::view('/about-us', 'pages.about-us');

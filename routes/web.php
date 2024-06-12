@@ -134,5 +134,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Temporaray View files 
 Route::view('/about-us', 'pages.about-us');
-Route::view('/blog-detail', 'pages.blog-detail');
-Route::view('/blog', 'pages.blog');
+Route::view('/Devotional-detail', 'pages.blog-detail');
+Route::view('/Devotional', 'pages.blog');
+Route::view('/contact', 'pages.contact-us');

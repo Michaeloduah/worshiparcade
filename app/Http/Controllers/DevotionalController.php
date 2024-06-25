@@ -22,8 +22,9 @@ class DevotionalController extends Controller
     public function index()
     {
         //
+        $user = auth()->user();
         $devotionals = Devotional::all();
-        return view('dashboard.devotional.index', ['devotionals' => $devotionals]);
+        return view('dashboard.devotional.index', compact('user', 'devotionals'));
     }
 
     /**
@@ -34,7 +35,8 @@ class DevotionalController extends Controller
     public function create()
     {
         //
-        return view('dashboard.devotional.create');
+        $user = auth()->user();
+        return view('dashboard.devotional.create', compact('user'));
     }
 
     /**
@@ -120,21 +122,30 @@ class DevotionalController extends Controller
         {
             $devotion = Devotional::findOrFail($id);
             $valid = $request->validate([
-                'opening_prayer' => 'required',
-                'topic' => 'required',
-                'bible_text' => 'required',
-                'memory_verse' => 'required',
-                'devotion' => 'required',
-                'closing_prayer' => 'required',
-                'date' => 'required',
-                'day' => 'required'
+                'opening_prayer' => 'nullable',
+                'topic' => 'nullable',
+                'bible_text' => 'nullable',
+                'memory_verse' => 'nullable',
+                'devotion' => 'nullable',
+                'closing_prayer' => 'nullable',
+                'date' => 'nullable',
+                'day' => 'nullable'
             ]);
 
-            $devotion->update(array_merge($valid));
-    
-    
+            $devotion->opening_prayer = $request->opening_prayer ?? $devotion->opening_prayer;
+            $devotion->topic = $request->topic ?? $devotion->topic;
+            $devotion->bible_text = $request->bible_text ?? $devotion->bible_text;
+            $devotion->memory_verse = $request->memory_verse ?? $devotion->memory_verse;
+            $devotion->devotion = $request->devotion ?? $devotion->devotion;
+            $devotion->closing_prayer = $request->closing_prayer ?? $devotion->closing_prayer;
+            $devotion->date = $request->date ?? $devotion->date;
+            $devotion->day = $request->day ?? $devotion->day;
+
+            $devotion->save();
+
+
             // dd($valid);
-            return redirect()->intended(route('dashboard.devotion.index'))->withInput($request->input())->with('message','Category Updated');
+            return redirect()->intended(route('dashboard.devotion.index'))->withInput($request->input())->with('message', 'Category Updated');
         }
     }
 

@@ -1,13 +1,11 @@
 @extends('layouts.dashboard')
-{{-- opening prayer
-topic
-bible text
-memory verse
-devotion
-closing prayer --}}
+
 @section('content')
     <div class="container">
-        <h1 class="text-center"><strong>All Events</strong></h1>
+        <div>
+            <a href="{{ route('dashboard.devotion.add-devotion') }}"><button class="btn btn-outline-info btn-sm"><i class="bi bi-plus"></i> Add Devotion</button></a>
+        </div>            
+        <h1 class="text-center"><strong>All Devotionals</strong></h1>
         <table id="myTable" class="table table-striped table-bordered">
             <thead>
                 <tr>

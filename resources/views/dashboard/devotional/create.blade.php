@@ -1,8 +1,5 @@
 @extends('layouts.dashboard')
 
-
-
-
 @section('content')
     <h1 class="text-center"><strong >Add Devotion</strong></h1>
     <div class="container">

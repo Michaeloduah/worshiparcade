@@ -275,80 +275,8 @@
 
     <!-- Hero One End -->
 
-    <!-- Fellowship Start -->
-
-    <section class="gap fellowship">
-      <div class="container">
-        <h2 class="text-center mx-auto">
-          We Gather for Inspiration, Fellowship, and Guidance in the of
-          Christian Discipleship.
-        </h2>
-
-        <div class="row">
-          <div
-            class="col-lg-4 col-md-6 col-sm-12"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="400"
-          >
-            <div class="offer text-center">
-              <span>
-                <img src="{{ asset('assets/img/wedding.svg') }}" alt="Wedding" />
-              </span>
-
-              <h3><a href="JavaScript:void(0)">Praise & Worship</a></h3>
-
-              <p class="mx-auto">
-                Our church is open and friendly with many social activities. To
-                keep our church running smoothly.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 col-sm-12"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="700"
-          >
-            <div class="offer text-center">
-              <span>
-                <img src="{{ asset('assets/img/pray.svg') }}" alt="Pray" />
-              </span>
-
-              <h3><a href="JavaScript:void(0)">Connect Members</a></h3>
-
-              <p class="mx-auto">
-                Our church is open and friendly with many social activities. To
-                keep our church running smoothly.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 col-sm-12"
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="800"
-          >
-            <div class="offer text-center">
-              <span>
-                <img src="{{ asset('assets/img/bird.svg') }}" alt="Bird" />
-              </span>
-
-              <h3><a href="JavaScript:void(0)">Parent’s Love</a></h3>
-
-              <p class="mx-auto">
-                Our church is open and friendly with many social activities. To
-                keep our church running smoothly.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fellowship End -->
+   
+   
 
     <!-- About One Start -->
 
@@ -465,6 +393,96 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
     </section>
 
     <!-- About One End -->
+
+     <!-- Donation Start -->
+
+     <section class="donation light-bg overflow-hidden">
+      <div class="container-fluid p-0">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid sideimage"
+              src="{{ asset('assets/img/donation-img.webp') }}"
+              alt="Donation Image"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              class="parallax pattren"
+              style="background-image: url({{asset('assets/img/pattren.jpg') }})"
+            ></div>
+            <div class="donation-data">
+              <h2 data-aos="fade-up" data-aos-duration="900">
+                Give Towards our Building project
+              </h2>
+
+              <p data-aos="fade-up" data-aos-duration="1100">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                totam rem ape eaque ipsa quae ab illo inven tore Loaperiam,
+                eaque ipsa quae ab illo invento eaqu e ipsa quae ab ille ab illo
+                inventore.
+              </p>
+
+              <div class="donation-form">
+                <div
+                  class="custom-donation-amount"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                >
+                  <span class="text-white">N</span>
+                  <input
+                    class="donated_amount"
+                    type="number"
+                    placeholder="Custom Amount"
+                  />
+                </div>
+
+                <ul
+                  class="list-unstyled"
+                  data-aos="fade-up"
+                  data-aos-duration="1400"
+                >
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">5000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">10,000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">20,000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">30,000</span></a
+                    >
+                  </li>
+                </ul>
+
+                <a
+                  class="theme-btn"
+                  href="JavaScript:void(0)"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  >Give Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation End -->
 
     <!-- Recent Sermons One Start -->
 
@@ -1092,95 +1110,6 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
     <!-- Events Carousal End -->
 
-    <!-- Donation Start -->
-
-    <section class="donation light-bg overflow-hidden">
-      <div class="container-fluid p-0">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <img
-              class="img-fluid sideimage"
-              src="{{ asset('assets/img/donation-img.webp') }}"
-              alt="Donation Image"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <div
-              class="parallax pattren"
-              style="background-image: url({{asset('assets/img/pattren.jpg') }})"
-            ></div>
-            <div class="donation-data">
-              <h2 data-aos="fade-up" data-aos-duration="900">
-                Give Towards our Building project
-              </h2>
-
-              <p data-aos="fade-up" data-aos-duration="1100">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                totam rem ape eaque ipsa quae ab illo inven tore Loaperiam,
-                eaque ipsa quae ab illo invento eaqu e ipsa quae ab ille ab illo
-                inventore.
-              </p>
-
-              <div class="donation-form">
-                <div
-                  class="custom-donation-amount"
-                  data-aos="fade-up"
-                  data-aos-duration="1300"
-                >
-                  <span class="text-white">N</span>
-                  <input
-                    class="donated_amount"
-                    type="number"
-                    placeholder="Custom Amount"
-                  />
-                </div>
-
-                <ul
-                  class="list-unstyled"
-                  data-aos="fade-up"
-                  data-aos-duration="1400"
-                >
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">5000</span></a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">10,000</span></a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">20,000</span></a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">30,000</span></a
-                    >
-                  </li>
-                </ul>
-
-                <a
-                  class="theme-btn"
-                  href="JavaScript:void(0)"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  >Give Now</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Donation End -->
 
     <!-- Blog Start -->
 

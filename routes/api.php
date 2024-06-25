@@ -16,6 +16,9 @@ use Spatie\FlareClient\Api;
 |
 */
 
+Route::post('/register', [Apis::class, 'createUser']);
+Route::post('/login', [Apis::class, 'loginUser']);
+
 Route::middleware('auth:sanctum')->group(function(){
     Route::get('transaction', [Apis::class, 'transactionHistory']);
     Route::post('/editprofile/{id}', [Apis::class, 'editProfile']);
@@ -50,5 +53,3 @@ Route::name('prayers.')->prefix('prayers')->group(function () {
 
 });
 
-Route::post('/register', [Apis::class, 'createUser']);
-Route::post('/login', [Apis::class, 'loginUser']);

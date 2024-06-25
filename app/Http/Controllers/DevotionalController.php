@@ -47,13 +47,6 @@ class DevotionalController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // opening prayer
-        // topic
-        // bible text
-        // memory verse
-        // devotion
-        // closing prayer
         $request->validate([
             'opening_prayer' => 'required',
             'topic' => 'required',

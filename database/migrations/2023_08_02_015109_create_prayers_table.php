@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('prayers', function (Blueprint $table) {
             $table->id();
             $table->string('prayer1');
-            $table->string('prayer2');
-            $table->string('prayer3');
-            $table->string('prayer4');
+            $table->string('prayer2')->nullable();
+            $table->string('prayer3')->nullable();
+            $table->string('prayer4')->nullable();
             $table->string('day');
             $table->date('date');
             $table->timestamps();

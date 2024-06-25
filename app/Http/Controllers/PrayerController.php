@@ -22,8 +22,9 @@ class PrayerController extends Controller
     public function index()
     {
         //
+        $user = auth()->user();
         $prayers = Prayer::all();
-        return view('dashboard.prayer.index', ['prayers' => $prayers]);
+        return view('dashboard.prayer.index', compact('user', 'prayers'));
     }
 
     /**
@@ -34,7 +35,8 @@ class PrayerController extends Controller
     public function create()
     {
         //
-        return view('dashboard.prayer.create');
+        $user = auth()->user();
+        return view('dashboard.prayer.create', compact('user'));
     }
 
     /**
@@ -48,9 +50,9 @@ class PrayerController extends Controller
         //
         $request->validate([
             'prayer1' => 'required',
-            'prayer2' => 'required',
-            'prayer3' => 'required',
-            'prayer4' => 'required',
+            'prayer2' => 'nullable',
+            'prayer3' => 'nullable',
+            'prayer4' => 'nullable',
             'day' => 'required',
             'date' => 'required'
         ]);
@@ -107,20 +109,25 @@ class PrayerController extends Controller
     {
         //
         {
-            $devotion = Prayer::findOrFail($id);
+            $prayer = Prayer::findOrFail($id);
             $valid = $request->validate([
-                'prayer1' => 'required',
-                'prayer2' => 'required',
-                'prayer3' => 'required',
-                'prayer4' => 'required',
-                'day' => 'required',
-                'date' => 'required'
+                'prayer1' => 'nullable',
+                'prayer2' => 'nullable',
+                'prayer3' => 'nullable',
+                'prayer4' => 'nullable',
+                'day' => 'nullable',
+                'date' => 'nullable'
             ]);
 
-            $devotion->update(array_merge($valid));
-    
-    
-            // dd($valid);
+            $prayer->prayer1 = $request->prayer1 ?? $prayer->prayer1;
+            $prayer->prayer2 = $request->prayer2 ?? $prayer->prayer2;
+            $prayer->prayer3 = $request->prayer3 ?? $prayer->prayer3;
+            $prayer->prayer4 = $request->prayer4 ?? $prayer->prayer4;
+            $prayer->day = $request->day ?? $prayer->day;
+            $prayer->date = $request->date ?? $prayer->date;
+
+            $prayer->save();
+
             return redirect()->intended(route('dashboard.prayer.index'))->withInput($request->input())->with('message','Category Updated');
         }
     }

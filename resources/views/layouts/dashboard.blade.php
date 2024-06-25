@@ -212,7 +212,7 @@
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#devotional" data-bs-toggle="collapse"
                         href="#">
-                        <i class="bi bi-journal-album"></i><span>Devotional</span><i
+                        <i class="bi bi-journal-album"></i><span>Devotional (done)</span><i
                             class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="devotional" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -233,7 +233,7 @@
                 <li class="nav-item">
                     <a class="nav-link collapsed" data-bs-target="#prayers" data-bs-toggle="collapse"
                         href="#">
-                        <i class="bi bi-journal-plus"></i><span>Prayers</span><i
+                        <i class="bi bi-journal-plus"></i><span>Prayers (done)</span><i
                             class="bi bi-chevron-down ms-auto"></i>
                     </a>
                     <ul id="prayers" class="nav-content collapse " data-bs-parent="#sidebar-nav">

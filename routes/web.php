@@ -131,4 +131,17 @@ Route::middleware('auth', 'verified')->group(function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-require __DIR__ . '/auth.php';
+//Temporaray View files 
+Route::view('/about-us', 'pages.about-us');
+Route::view('/Devotional-detail', 'pages.blog-detail');
+Route::view('/Devotional', 'pages.blog');
+Route::view('/contact', 'pages.contact-us');
+Route::view('/give', 'pages.donation-page');
+Route::view('/event-details', 'pages.event-detail');
+Route::view('/events', 'pages.events');
+Route::view('/our-ministries', 'pages.our-ministries');
+Route::view('/pastor-detail', 'pages.pastor-detail');
+Route::view('/product-detail', 'pages.product-detail');
+Route::view('/sermon-detail', 'pages.sermon-detail');
+Route::view('/sermons', 'pages.sermons');
+Route::view('/shop', 'pages.shop');

@@ -106,7 +106,7 @@ class UserController extends Controller
     }
 
     public function loginPage() {
-        return view('login');
+        return view('auth.login');
     }
 
     public function login(Request $request)

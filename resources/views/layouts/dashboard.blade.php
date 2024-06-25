@@ -79,15 +79,15 @@
 
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                             <li class="dropdown-header">
-                                <h6>Kevin Anderson</h6>
-                                <span>Web Designer</span>
+                                <h6>{{ $user->name }}</h6>
+                                <span>Admin</span>
                             </li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
 
                             <li>
-                                <a class="dropdown-item d-flex align-items-center" href="">
+                                <a class="dropdown-item d-flex align-items-center" href="{{ route('profile') }}">
                                     <i class="bi bi-person"></i>
                                     <span>My Profile</span>
                                 </a>
@@ -275,14 +275,14 @@
                 <li class="nav-heading">Tools</li>
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="">
+                    <a class="nav-link collapsed" href="{{ route('profile') }}">
                         <i class="bi bi-person"></i>
                         <span>My Profile</span>
                     </a>
                 </li><!-- End Profile Page Nav -->
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="">
+                    <a class="nav-link collapsed" href="{{ route('logout') }}">
                         <i class="bi bi-box-arrow-right"></i>
                         <span>Sign Out</span>
                     </a>

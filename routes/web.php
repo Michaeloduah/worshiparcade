@@ -56,6 +56,10 @@ Auth::routes(['verify' => true]);
 
 Route::middleware('auth', 'verified')->group(function () {
 
+    Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
+    Route::get('editprofile', [DashboardController::class, 'editProfile'])->name('editprofile');
+    Route::post('updateprofile/{id}', [DashboardController::class, 'updateProfile'])->name('updateprofile');
+
 
     Route::name('dashboard.')->prefix('dashboard')->group(function () {
         Route::get('', [DashboardController::class, 'index'])->name('dashboard');
@@ -145,3 +149,6 @@ Route::view('/product-detail', 'pages.product-detail');
 Route::view('/sermon-detail', 'pages.sermon-detail');
 Route::view('/sermons', 'pages.sermons');
 Route::view('/shop', 'pages.shop');
+
+
+require __DIR__ . '/auth.php';

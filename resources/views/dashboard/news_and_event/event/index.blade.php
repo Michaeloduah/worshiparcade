@@ -2,6 +2,9 @@
 
 @section('content')
     <div class="container">
+        <div>
+            <a href="{{ route('dashboard.event.add-event') }}"><button class="btn btn-outline-info btn-sm"><i class="bi bi-plus"></i> Add New Event</button></a>
+        </div>
         <h1 class="text-center"><strong>All Events</strong></h1>
         <table id="myTable" class="table table-striped table-bordered">
             <thead>

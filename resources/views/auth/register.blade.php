@@ -49,7 +49,7 @@
         <!-- Profile Picture -->
         <div class="mt-4">
             <x-input-label for="image" :value="__('Profile Picture')" />
-            <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" :value="old('image')" required autocomplete="username" />
+            <x-text-input id="image" class="block mt-1 w-full" type="file" name="image" :value="old('image')" autocomplete="username" />
             <x-input-error :messages="$errors->get('image')" class="mt-2" />
         </div>
 

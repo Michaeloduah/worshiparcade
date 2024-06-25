@@ -4,7 +4,7 @@
 
 <div class="container">
     <div>
-        <a href="{{ route('dashboard.event-category.eventCategory') }}"><button class="btn btn-outline-info btn-sm"><i class="bi bi-plus"></i> Add Event Categories</button></a>
+        <a href="{{ route('dashboard.event-category.eventCategory') }}"><button class="btn btn-outline-info btn-sm"><i class="bi bi-plus"></i> Add New Event Categories</button></a>
     </div>
     <h1 class="text-center"><strong>All Event Categories</strong></h1>
     <table id="myTable" class="table table-striped table-bordered">

@@ -125,6 +125,15 @@ Route::middleware('auth', 'verified')->group(function () {
             Route::post('edit-prayer/{id}', [PrayerController::class, 'update'])->name('update-prayer');
             Route::get('{id}', [PrayerController::class, 'destroy'])->name('delete-prayer');
         });
+
+        Route::name('sermon.')->prefix('sermon')->group(function () {
+            Route::get('', [SermonController::class, 'index'])->name('index');
+            Route::get('add-sermon', [SermonController::class, 'create'])->name('add-sermon');
+            Route::post('sermon', [SermonController::class, 'store'])->name('sermon');
+            Route::get('edit-sermon/{id}', [SermonController::class, 'edit'])->name('edit-sermon');
+            Route::post('edit-sermon/{id}', [SermonController::class, 'update'])->name('update-sermon');
+            Route::get('{id}', [SermonController::class, 'destroy'])->name('delete-sermon');
+        });
     });
 
     Route::name('user.')->prefix('user')->group(function () {

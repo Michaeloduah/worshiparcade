@@ -104,11 +104,11 @@ class EventController extends Controller
         {
             $event = Event::findOrFail($id);
             $valid = $request->validate([
-                'name' => 'required',
-                'description' => 'required',
-                'event_category_id' => 'required',
+                'name' => 'nullable',
+                'description' => 'nullable',
+                'event_category_id' => 'nullable',
                 'image' => 'mimes:jpg,png,jpeg,mp4',
-                'date' => 'required'
+                'date' => 'nullable'
 
             ]);
 

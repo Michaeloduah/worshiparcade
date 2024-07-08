@@ -259,12 +259,12 @@
                     <ul id="sermon" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li class="nav-heading">Sermons</li>
                         <li>
-                            <a href="{{ route('dashboard.devotion.index') }}">
+                            <a href="{{ route('dashboard.sermon.index') }}">
                                 <i class="bi bi-circle"></i><span>Sermons</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('dashboard.devotion.add-devotion') }}">
+                            <a href="{{ route('dashboard.sermon.add-sermon') }}">
                                 <i class="bi bi-circle"></i><span>Add Sermon</span>
                             </a>
                         </li>

@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('sermons', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('description');
+            $table->string('audio');
+            $table->string('video')->nullable();
             $table->timestamps();
         });
     }

@@ -133,7 +133,7 @@ Route::middleware('auth', 'verified')->group(function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //Temporaray View files 
-Route::view('/about-us', 'pages.about-us');
+Route::view('/about-us', 'pages.about-us')->name('about');
 Route::view('/index', 'index')->name('index');
 Route::view('/Devotional-detail', 'pages.blog-detail')->name('devotionals');
 Route::view('/Devotional', 'pages.blog')->name('devotional');

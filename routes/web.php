@@ -134,15 +134,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //Temporaray View files 
 Route::view('/about-us', 'pages.about-us');
-Route::view('/Devotional-detail', 'pages.blog-detail');
-Route::view('/Devotional', 'pages.blog');
-Route::view('/contact', 'pages.contact-us');
-Route::view('/give', 'pages.donation-page');
-Route::view('/event-details', 'pages.event-detail');
-Route::view('/events', 'pages.events');
-Route::view('/our-ministries', 'pages.our-ministries');
-Route::view('/pastor-detail', 'pages.pastor-detail');
-Route::view('/product-detail', 'pages.product-detail');
-Route::view('/sermon-detail', 'pages.sermon-detail');
-Route::view('/sermons', 'pages.sermons');
-Route::view('/shop', 'pages.shop');
+Route::view('/index', 'index')->name('index');
+Route::view('/Devotional-detail', 'pages.blog-detail')->name('devotionals');
+Route::view('/Devotional', 'pages.blog')->name('devotional');
+Route::view('/contact', 'pages.contact-us')->name('contact');
+Route::view('/give', 'pages.donation-page')->name('donation');
+Route::view('/event-details', 'pages.event-detail')->name('events');
+Route::view('/events', 'pages.events')->name('event');
+Route::view('/our-ministries', 'pages.our-ministries')->name('our-ministries');
+Route::view('/pastor-detail', 'pages.pastor-detail')->name('pastors');
+Route::view('/product-detail', 'pages.product-detail')->name('products');
+Route::view('/sermon-detail', 'pages.sermon-detail')->name('sermons');
+Route::view('/sermons', 'pages.sermons')->name('sermon');
+Route::view('/shop', 'pages.shop')->name('shop');

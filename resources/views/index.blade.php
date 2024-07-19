@@ -68,7 +68,7 @@
           height="200"
         ></canvas>
         <figure><img src="{{ asset('assets/img/icon-white.png') }}" alt="Image" /></figure>
-        <small>Loading</small>
+        <small>Christ is coming soon....</small>
       </div>
       <!-- end inner -->
     </div>
@@ -124,7 +124,7 @@
             <div class="col-lg-12">
               <nav>
                 <div class="logo">
-                  <a href="index.html">
+                  <a href="{{ route('index') }}">
                     <img src="{{ asset('assets/img/church-logo.png') }}" alt="Logo" />
                   </a>
                 </div>
@@ -179,8 +179,6 @@
                       </g>
                     </svg>
                   </a>
-
-                  
 
                   <a
                     href="JavaScript:void(0)"
@@ -258,10 +256,13 @@
           <img src="{{ asset('assets/img/hero-image.png') }}" alt="hero-one-slider" />
           <div class="hero-data text-center">
             <h1>
-              Worship That<br />
-              is Pleasing to God
+              WORSHIP ARCADE </br>
+              (THE COMMUNITY CHURCH, ASABA)
             </h1>
-            <p>God has given us power and authority.</p>
+            <p>Where we believe in sharing the love of God with everyone we
+              meet, Whether you're a long-time member of our congregation
+              or a first-time visitor, you are not too small for us to know you neither
+              are we too big to identify with you.</p>
           </div>
         </div>
         <div>

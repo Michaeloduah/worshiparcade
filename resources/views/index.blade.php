@@ -249,20 +249,16 @@
     <!-- Header One Start -->
 
     <!-- Hero One here -->
-
     <section class="hero-one">
       <div class="hero-one-slider">
         <div>
           <img src="{{ asset('assets/img/hero-image.png') }}" alt="hero-one-slider" />
           <div class="hero-data text-center">
             <h1>
-              WORSHIP ARCADE </br>
-              (THE COMMUNITY CHURCH, ASABA)
+              Worship That<br />
+              is Pleasing to God 
             </h1>
-            <p>Where we believe in sharing the love of God with everyone we
-              meet, Whether you're a long-time member of our congregation
-              or a first-time visitor, you are not too small for us to know you neither
-              are we too big to identify with you.</p>
+            <p>God has given us power and authority.</p>
           </div>
         </div>
         <div>
@@ -271,6 +267,7 @@
         </div>
       </div>
     </section>
+    
 
     <!-- banner part end -->
 
@@ -801,9 +798,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
           </div>
         </div>
 
-        <div class="d-flex justify-content-center loadmore">
-          <a href="JavaScript:void(0)" class="theme-btn">View All Playlist</a>
-        </div>
+       
       </div>
     </section>
 

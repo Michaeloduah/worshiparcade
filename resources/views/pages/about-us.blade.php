@@ -235,7 +235,7 @@
 
 						<div class="meta green-bg">
 
-							<a class="font-bold text-white" href="pastor-detail.html">Rev. Peter Mayah</a>
+							<a class="font-bold text-white" href="{{ route('pastors') }}">Rev. Peter Mayah</a>
 
 							<p class="font-bold text-white">Senior Pastor</p>
 
@@ -258,7 +258,7 @@
 
 						<div class="meta green-bg">
 
-							<a class="font-bold text-white" href="pastor-detail.html">Rev. Peter Mayah</a>
+							<a class="font-bold text-white" href="{{ route('pastors') }}">Rev. Peter Mayah</a>
 
 							<p class="font-bold text-white">Asst. Pastor</p>
 
@@ -276,7 +276,7 @@
 
 						<div class="meta green-bg">
 
-							<a class="font-bold text-white" href="pastor-detail.html">Rev. Peter Mayah</a>
+							<a class="font-bold text-white" href="{{ route('pastors') }}">Rev. Peter Mayah</a>
 
 							<p class="font-bold text-white">Senior Pastor</p>
 

@@ -330,7 +330,7 @@
                     >Domestic Violence and Impact on Ministry</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
 
@@ -344,7 +344,7 @@
                     >Support Groups: May the God Be with</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
             </ul>

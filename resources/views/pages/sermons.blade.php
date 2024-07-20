@@ -48,9 +48,6 @@
 
 							<li><a class="s_video" href="JavaScript:void(0)"><img src="assets/images/play-button-2.svg" alt="Play Button"></a></li>
 
-							<li><a class="s_pdf" href="JavaScript:void(0)"><img src="assets/images/book.svg" alt="Book"></a></li>
-
-							<li><a class="s_music" href="JavaScript:void(0)"><img src="assets/images/download.svg" alt="download"></a></li>
 
 						</ul>
 
@@ -62,11 +59,11 @@
 
 							<li>Rev Peter Mayah</li>
 
-							<li>Nov 19, 2021</li>
+							<li>Nov 19, 2023</li>
 
 						</ul>
 
-						<h3><a href="{{ route('sermons') }}">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn </a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 
@@ -112,9 +109,6 @@
 
 							<li><a class="s_video" href="JavaScript:void(0)"><img src="assets/images/play-button-2.svg" alt="Play Button"></a></li>
 
-							<li><a class="s_pdf" href="JavaScript:void(0)"><img src="assets/images/book.svg" alt="Book"></a></li>
-
-							<li><a class="s_music" href="JavaScript:void(0)"><img src="assets/images/download.svg" alt="download"></a></li>
 
 						</ul>
 
@@ -126,11 +120,11 @@
 
 							<li>Rev Peter Mayah</li>
 
-							<li>Nov 19, 2021</li>
+							<li>Nov 19, 2023</li>
 
 						</ul>
 
-						<h3><a href="{{ route('sermons') }}">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn </a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 
@@ -176,9 +170,6 @@
 
 							<li><a class="s_video" href="JavaScript:void(0)"><img src="assets/images/play-button-2.svg" alt="Play Button"></a></li>
 
-							<li><a class="s_pdf" href="JavaScript:void(0)"><img src="assets/images/book.svg" alt="Book"></a></li>
-
-							<li><a class="s_music" href="JavaScript:void(0)"><img src="assets/images/download.svg" alt="download"></a></li>
 
 						</ul>
 
@@ -190,11 +181,11 @@
 
 							<li>Rev Peter Mayah</li>
 
-							<li>Nov 19, 2021</li>
+							<li>Nov 19, 2023</li>
 
 						</ul>
 
-						<h3><a href="{{ route('sermons') }}">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn </a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 

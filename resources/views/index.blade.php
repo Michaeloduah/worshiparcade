@@ -546,7 +546,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>Rev. Peter Mayah</li>
 
-                <li>Nov 19, 2021</li>
+                <li>Nov 19, 2023</li>
               </ul>
 
               <h3>
@@ -613,12 +613,12 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>Rev. Peter Mayah</li>
 
-                <li>Nov 19, 2021</li>
+                <li>Nov 19, 2023</li>
               </ul>
 
               <h3>
                 <a href="{{ route('sermons') }}"
-                  >Spiritually Reborn As parent’s Children</a
+                  >Spiritually Reborn </a
                 >
               </h3>
 
@@ -679,12 +679,12 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>Rev. Peter Mayah</li>
 
-                <li>Nov 19, 2021</li>
+                <li>Nov 19, 2023</li>
               </ul>
 
               <h3>
                 <a href="{{ route('sermons') }}"
-                  >Spiritually Reborn As parent’s Children</a
+                  >Spiritually Reborn </a
                 >
               </h3>
 
@@ -1108,11 +1108,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               </figure>
 
               <ul>
-                <li class="date">21 Dec, 2021</li>
+                <li class="date">21 Dec, 2023</li>
               </ul>
 
               <a href="{{ route('devotionals') }}" class="font-bold"
-                >Public Health By Allowing California Order</a
+                >Finding God in the midst of the storm</a
               >
 
               <p>
@@ -1138,11 +1138,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               </figure>
 
               <ul>
-                <li class="date">21 Dec, 2021</li>
+                <li class="date">21 Dec, 2023</li>
               </ul>
 
               <a href="{{ route('devotionals') }}" class="font-bold"
-                >Public Health By Allowing California Order</a
+                >Finding God in the midst of the storm</a
               >
 
               <p>
@@ -1168,11 +1168,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               </figure>
 
               <ul>
-                <li class="date">21 Dec, 2021</li>
+                <li class="date">21 Dec, 2023</li>
               </ul>
 
               <a href="{{ route('devotionals') }}" class="font-bold"
-                >Public Health By Allowing California Order</a
+                >Finding God in the midst of the storm</a
               >
 
               <p>
@@ -1255,7 +1255,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                     >Domestic Violence and Impact on Ministry</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
 
@@ -1269,7 +1269,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                     >Support Groups: May the God Be with</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
             </ul>

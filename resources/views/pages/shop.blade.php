@@ -30,7 +30,7 @@
 								<div class="star"></div>
 								<div class="star"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N1800</span>
 							</div>
@@ -53,7 +53,7 @@
 								<div class="star colored"></div>
 								<div class="star"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N9800</span>
 							</div>
@@ -76,7 +76,7 @@
 								<div class="star colored"></div>
 								<div class="star colored"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N5000</span>
 							</div>
@@ -99,7 +99,7 @@
 								<div class="star"></div>
 								<div class="star"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N2500</span>
 							</div>
@@ -122,7 +122,7 @@
 								<div class="star"></div>
 								<div class="star"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N1250</span>
 							</div>
@@ -145,7 +145,7 @@
 								<div class="star"></div>
 								<div class="star"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N1400</span>
 							</div>
@@ -168,7 +168,7 @@
 								<div class="star"></div>
 								<div class="star"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N2050</span>
 							</div>
@@ -191,7 +191,7 @@
 								<div class="star"></div>
 								<div class="star"></div>
 							</div>
-							<a href="product-detail.html">Common Worship Lectionary</a>
+							<a href="{{ route('products') }}">Common Worship Lectionary</a>
 							<div class="product-prices">
 								<span class="price font-bold">N1200</span>
 							</div>

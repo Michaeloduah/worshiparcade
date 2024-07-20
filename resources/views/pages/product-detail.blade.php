@@ -26,7 +26,7 @@
 					
 						<div class="pd-cart-heart">
 							<input type="number" name="number" placeholder="N">
-							<a href="JavaScript:void(0)" class="theme-btn">Buy Now</a>
+							<a href="JavaScript:void(0)" class="theme-btn">Order</a>
 								
 							</a>
 						</div>

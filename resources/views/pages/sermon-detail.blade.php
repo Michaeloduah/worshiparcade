@@ -62,7 +62,7 @@
                 alt="Sermon"
               />
               <video controls>
-                <source src="assets/videos/video.mp4" type="video/mp4" />
+                <source src="{{ asset('assets/videos/video.mp4') }}" type="video/mp4" />
 
                 Your browser does not support the video tag.
               </video>
@@ -71,7 +71,7 @@
                 <audio controls>
                   <!-- <source src="audio.ogg" type="audio/ogg"> -->
 
-                  <source src="assets/music/audio-2.mp3" type="audio/mpeg" />
+                  <source src="{{ asset('assets/music/audio-2.mp3') }}" type="audio/mpeg" />
 
                   Your browser does not support the audio element.
                 </audio>

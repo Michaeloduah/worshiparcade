@@ -66,7 +66,7 @@
 
 						</ul>
 
-						<h3><a href="sermon-detail.html">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn As God’s Children</a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 
@@ -130,7 +130,7 @@
 
 						</ul>
 
-						<h3><a href="sermon-detail.html">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn As God’s Children</a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 
@@ -194,7 +194,7 @@
 
 						</ul>
 
-						<h3><a href="sermon-detail.html">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn As God’s Children</a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 

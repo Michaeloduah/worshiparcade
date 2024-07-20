@@ -538,17 +538,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   /></a>
                 </li>
 
-                <li>
-                  <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
-                  /></a>
-                </li>
-
-                <li>
-                  <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
-                  /></a>
-                </li>
+                
               </ul>
             </div>
 
@@ -615,17 +605,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   /></a>
                 </li>
 
-                <li>
-                  <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
-                  /></a>
-                </li>
-
-                <li>
-                  <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
-                  /></a>
-                </li>
+                
               </ul>
             </div>
 
@@ -692,17 +672,6 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   /></a>
                 </li>
 
-                <li>
-                  <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
-                  /></a>
-                </li>
-
-                <li>
-                  <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
-                  /></a>
-                </li>
               </ul>
             </div>
 

@@ -1558,6 +1558,7 @@ button.scrollTopStick.active {
 .hero-one {
     height: 100vh;
     position: relative;
+    margin-bottom: 5rem;
 }
 .hero-data {
     position: absolute;

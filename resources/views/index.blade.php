@@ -266,6 +266,40 @@
         <div>
         </div>
       </div>
+
+      <div class="hero-two-slider">
+        <div>
+          <img src="{{ asset('assets/img/hero-image.png') }}" alt="hero-one-slider" />
+          <div class="hero-data text-center">
+            <h1>
+              Worship That<br />
+              is Pleasing to God 
+            </h1>
+            <p>God has given us power and authority.</p>
+          </div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+      </div>
+
+      <div class="hero-three-slider">
+        <div>
+          <img src="{{ asset('assets/img/hero-image.png') }}" alt="hero-one-slider" />
+          <div class="hero-data text-center">
+            <h1>
+              Worship That<br />
+              is Pleasing to God 
+            </h1>
+            <p>God has given us power and authority.</p>
+          </div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
+      </div>
     </section>
     
 

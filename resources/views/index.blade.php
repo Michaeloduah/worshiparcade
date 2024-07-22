@@ -249,25 +249,37 @@
     <!-- Header One Start -->
 
     <!-- Hero One here -->
-    <section class="hero-one">
-      <div class="hero-one-slider">
-        <div>
-          <img src="{{ asset('assets/img/hero-image.png') }}" alt="hero-one-slider" />
-          <div class="hero-data text-center">
-            <h1>
-              WORSHIP ARCADE <br>
-              (THE COMMUNITY CHURCH, ASABA) 
-            </h1>
-          </div>
-        </div>
+  <!-- Hero One here -->
+
+  <section class="hero-one">
+    <div class="hero-one-slider">
       <div>
-        </div>
-        <div>
+        <img src="{{ asset('assets/images/hero.png') }}" alt="hero-one-slider">
+        <div class="hero-data text-center">
+          <h1>Worship That<br> is Pleasing to God</h1>
+          <p>God has given us power and authority.</p>
         </div>
       </div>
+      <div>
+        <img src="{{ asset('assets/images/hero.png') }}" alt="hero-one-slider">
+        <div class="hero-data text-center">
+          <h1>We Love God<br> We Belive in God</h1>
+          <p>There is no other way except jesus.</p>
+        </div>
+      </div>
+      <div>
+        <img src="{{ asset('assets/images/hero.png') }}" alt="hero-one-slider">
+        <div class="hero-data text-center">
+          <h1>Love God<br> Love Doing Good</h1>
+          <p>We are a church that belives in Jesus christ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      
-    </section>
+      <!-- banner part end -->
+
+<!-- Hero One End -->
 
     
 

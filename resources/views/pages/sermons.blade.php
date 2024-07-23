@@ -16,11 +16,11 @@
 
 						<div class="sermon-media">
 
-							<img src="assets/images/sermon-img.webp" alt="Sermon Image 1">
+							<img src="{{ asset('assets/images/sermon-img.webp') }}" alt="Sermon Image 1">
 
 							<video controls>
 
-								<source src="assets/videos/video.mp4" type="video/mp4">
+								<source src="{{ asset('assets/videos/video.mp4') }}" type="video/mp4">
 
 								Your browser does not support the video tag.
 
@@ -32,7 +32,7 @@
 
 								  <!-- <source src="audio.ogg" type="audio/ogg"> -->
 
-								  <source src="assets/music/audio-2.mp3" type="audio/mpeg">
+								  <source src="{{ asset('assets/music/audio-2.mp3') }}" type="audio/mpeg">
 
 								  Your browser does not support the audio element.
 
@@ -44,13 +44,10 @@
 
 						<ul>
 
-							<li><a class="s_audio" href="JavaScript:void(0)"><img src="assets/images/music-note.svg" alt="volume"></a></li>
+							<li><a class="s_audio" href="JavaScript:void(0)"><img src="{{ asset('assets/images/music-note.svg') }}" alt="volume"></a></li>
 
-							<li><a class="s_video" href="JavaScript:void(0)"><img src="assets/images/play-button-2.svg" alt="Play Button"></a></li>
+							<li><a class="s_video" href="JavaScript:void(0)"><img src="{{ asset('assets/images/play-button-2.svg') }}" alt="Play Button"></a></li>
 
-							<li><a class="s_pdf" href="JavaScript:void(0)"><img src="assets/images/book.svg" alt="Book"></a></li>
-
-							<li><a class="s_music" href="JavaScript:void(0)"><img src="assets/images/download.svg" alt="download"></a></li>
 
 						</ul>
 
@@ -62,11 +59,11 @@
 
 							<li>Rev Peter Mayah</li>
 
-							<li>Nov 19, 2021</li>
+							<li>Nov 19, 2023</li>
 
 						</ul>
 
-						<h3><a href="sermon-detail.html">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn </a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 
@@ -80,11 +77,11 @@
 
 						<div class="sermon-media">
 
-							<img src="assets/images/sermon-img-1.webp" alt="Sermon Image 1">
+							<img src="{{ asset('assets/images/sermon-img-1.webp') }}" alt="Sermon Image 1">
 
 							<video controls>
 
-								<source src="assets/videos/video.mp4" type="video/mp4">
+								<source src="{{ asset('assets/videos/video.mp4') }}" type="video/mp4">
 
 								Your browser does not support the video tag.
 
@@ -96,7 +93,7 @@
 
 								  <!-- <source src="audio.ogg" type="audio/ogg"> -->
 
-								  <source src="assets/music/audio-2.mp3" type="audio/mpeg">
+								  <source src="{{ asset('assets/music/audio-2.mp3') }}" type="audio/mpeg">
 
 								  Your browser does not support the audio element.
 
@@ -108,13 +105,10 @@
 
 						<ul>
 
-							<li><a class="s_audio" href="JavaScript:void(0)"><img src="assets/images/music-note.svg" alt="volume"></a></li>
+							<li><a class="s_audio" href="JavaScript:void(0)"><img src="{{ asset('assets/images/music-note.svg') }}" alt="volume"></a></li>
 
-							<li><a class="s_video" href="JavaScript:void(0)"><img src="assets/images/play-button-2.svg" alt="Play Button"></a></li>
+							<li><a class="s_video" href="JavaScript:void(0)"><img src="{{ asset('assets/images/play-button-2.svg') }}" alt="Play Button"></a></li>
 
-							<li><a class="s_pdf" href="JavaScript:void(0)"><img src="assets/images/book.svg" alt="Book"></a></li>
-
-							<li><a class="s_music" href="JavaScript:void(0)"><img src="assets/images/download.svg" alt="download"></a></li>
 
 						</ul>
 
@@ -126,11 +120,11 @@
 
 							<li>Rev Peter Mayah</li>
 
-							<li>Nov 19, 2021</li>
+							<li>Nov 19, 2023</li>
 
 						</ul>
 
-						<h3><a href="sermon-detail.html">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn </a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 
@@ -144,11 +138,11 @@
 
 						<div class="sermon-media">
 
-							<img src="assets/images/sermon-img-2.webp" alt="Sermon Image 1">
+							<img src="{{ asset('assets/images/sermon-img-2.webp') }}" alt="Sermon Image 1">
 
 							<video controls>
 
-								<source src="assets/videos/video.mp4" type="video/mp4">
+								<source src="{{ asset('assets/videos/video.mp4') }}" type="video/mp4">
 
 								Your browser does not support the video tag.
 
@@ -160,7 +154,7 @@
 
 								  <!-- <source src="audio.ogg" type="audio/ogg"> -->
 
-								  <source src="assets/music/audio-2.mp3" type="audio/mpeg">
+								  <source src="{{ asset('assets/music/audio-2.mp3') }}" type="audio/mpeg">
 
 								  Your browser does not support the audio element.
 
@@ -172,13 +166,10 @@
 
 						<ul>
 
-							<li><a class="s_audio" href="JavaScript:void(0)"><img src="assets/images/music-note.svg" alt="volume"></a></li>
+							<li><a class="s_audio" href="JavaScript:void(0)"><img src="{{ asset('assets/images/music-note.svg') }}" alt="volume"></a></li>
 
-							<li><a class="s_video" href="JavaScript:void(0)"><img src="assets/images/play-button-2.svg" alt="Play Button"></a></li>
+							<li><a class="s_video" href="JavaScript:void(0)"><img src="{{ asset('assets/images/play-button-2.svg') }}" alt="Play Button"></a></li>
 
-							<li><a class="s_pdf" href="JavaScript:void(0)"><img src="assets/images/book.svg" alt="Book"></a></li>
-
-							<li><a class="s_music" href="JavaScript:void(0)"><img src="assets/images/download.svg" alt="download"></a></li>
 
 						</ul>
 
@@ -190,11 +181,11 @@
 
 							<li>Rev Peter Mayah</li>
 
-							<li>Nov 19, 2021</li>
+							<li>Nov 19, 2023</li>
 
 						</ul>
 
-						<h3><a href="sermon-detail.html">Spiritually Reborn As God’s Children</a></h3>
+						<h3><a href="{{ route('sermons') }}">Spiritually Reborn </a></h3>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipi elit, sed totam rem ape eaque ipsa quae ab illo e ipsa quae ab ille ab illo inventore.</p>
 

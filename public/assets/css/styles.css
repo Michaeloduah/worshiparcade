@@ -13,54 +13,6 @@ body{
 /* *******General styles */
 /* ******************* */
 
-header{
-  background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.75) 20.23%, rgba(44, 6, 29, 0.75) 100%), url(/assets/hero.png);
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.9;
-  height: 90vh;
-}
-
-.logo{
-  font-size: 1.5rem;
-}
-
-.wrapper{
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  margin: auto 14%;
-}
-
-nav{
-  position: fixed;
-  right: -100%;
-  top: 0;
-  width: 33%;
-  background: black;
-  height: 100vh;
-  padding: 4.6em;
-  transition: right .5s ease-in-out;
-}
-
-.menu-btn{
-  width: 3rem;
-  cursor: pointer;
-}
-
-.close-btn{
-  cursor: pointer;
-  display: block;
-  width: 3rem;
-  margin-left: auto;
-  margin-bottom: 6.6rem;
-}
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
 .btn-main,

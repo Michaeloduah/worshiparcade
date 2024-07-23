@@ -44,7 +44,7 @@
                
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
+              <a href="{{ route('devotionals') }}" class="font-bold"
                 >The Grace of God that gives room for access</a
               >
 
@@ -75,7 +75,7 @@
               
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
+              <a href="{{ route('devotionals') }}" class="font-bold"
                 >The Grace of God that gives room for access</a
               >
 
@@ -106,7 +106,7 @@
                
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
+              <a href="{{ route('devotionals') }}" class="font-bold"
                 >The Grace of God that gives room for access</a
               >
 
@@ -136,7 +136,7 @@
 
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
+              <a href="{{ route('devotionals') }}" class="font-bold"
                 >The Grace of God that gives room for access</a
               >
 
@@ -166,7 +166,7 @@
 
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
+              <a href="{{ route('devotionals') }}" class="font-bold"
                 >The Grace of God that gives room for access</a
               >
 
@@ -197,7 +197,7 @@
                
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
+              <a href="{{ route('devotionals') }}" class="font-bold"
                 >The Grace of God that gives room for access</a
               >
 

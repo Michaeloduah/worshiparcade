@@ -162,7 +162,7 @@
 
 											<p class="post-date theme-bg-clr text-white font-bold d-inline-flex text-uppercase">21 dec, 2021</p>
 
-											<a href="blog-detail.html" class="d-flex font-bold">Rev. Peter Mayah on Tithing</a>
+											<a href="{{ route('devotionals') }}" class="d-flex font-bold">Rev. Peter Mayah on Tithing</a>
 
 										</div>
 
@@ -176,7 +176,7 @@
 
 											<p class="post-date theme-bg-clr text-white font-bold d-inline-flex text-uppercase">21 dec, 2021</p>
 
-											<a href="blog-detail.html" class="d-flex font-bold">Rev. Peter Mayah on Tithing</a>
+											<a href="{{ route('devotionals') }}" class="d-flex font-bold">Rev. Peter Mayah on Tithing</a>
 
 										</div>
 
@@ -190,7 +190,7 @@
 
 											<p class="post-date theme-bg-clr text-white font-bold d-inline-flex text-uppercase">21 dec, 2021</p>
 
-											<a href="blog-detail.html" class="d-flex font-bold">Rev. Peter Mayah on Tithing</a>
+											<a href="{{ route('devotionals') }}" class="d-flex font-bold">Rev. Peter Mayah on Tithing</a>
 
 										</div>
 

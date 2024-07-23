@@ -124,7 +124,7 @@
             <div class="col-lg-12">
               <nav>
                 <div class="logo">
-                  <a href="index.html">
+                  <a href="{{ route('index') }}">
                     <img src="{{ asset('assets/img/church-logo.png') }}" alt="Logo" />
                   </a>
                 </div>
@@ -139,7 +139,7 @@
                       <a href="JavaScript:void(0)">Sermons</a>
 
                       <ul class="sub-menu">
-                        <li><a href="sermons.html">Our Sermons</a></li>
+                        <li><a href="{{ route('sermon') }}">Our Sermons</a></li>
                       </ul>
                     </li>
 
@@ -147,7 +147,7 @@
                       <a href="JavaScript:void(0)">Events</a>
 
                       <ul class="sub-menu">
-                        <li><a href="events.html">Our Events</a></li>
+                        <li><a href="{{ route('event') }}">Our Events</a></li>
                       </ul>
                     </li>
 
@@ -156,16 +156,16 @@
 
                       <ul class="sub-menu">
                         
-                        <li><a href="blog.html">Our Devotions</a></li>
+                        <li><a href="{{ route('devotional') }}">Our Devotions</a></li>
                       </ul>
                     </li>
 
-                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
                   </ul>
                 </div>
 
                 <div class="donation">
-                  <a href="shop.html" class="pr-cart">
+                  <a href="{{ route('shop') }}" class="pr-cart">
                     <svg
                       id="Shoping-bags"
                       enable-background="new 0 0 512 512"
@@ -206,7 +206,7 @@
 
       <div class="mobile-nav" id="mobile-nav">
         <div class="res-log">
-          <a href="index.html">
+          <a href="{{ route('index') }}">
             <img src="{{ asset('assets/img/church-logo.png') }}" alt="Responsive Logo" />
           </a>
         </div>
@@ -220,7 +220,7 @@
             <a href="JavaScript:void(0)">Sermons</a>
 
             <ul class="sub-menu">
-              <li><a href="sermons.html">Our Sermons</a></li>
+              <li><a href="{{ route('sermon') }}">Our Sermons</a></li>
             </ul>
           </li>
 
@@ -228,7 +228,7 @@
             <a href="JavaScript:void(0)">Events</a>
 
             <ul class="sub-menu">
-              <li><a href="events.html">Our Events</a></li>
+              <li><a href="{{ route('event') }}">Our Events</a></li>
             </ul>
           </li>
 
@@ -238,11 +238,11 @@
             <ul class="sub-menu">
               <!-- Third Level Menu Html Code -->
               
-              <li><a href="404.html">Our Devotions</a></li>
+              <li><a href="{{ route('devotional') }}">Our Devotions</a></li>
             </ul>
           </li>
 
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
         <a href="JavaScript:void(0)" id="res-cross"></a>
@@ -278,7 +278,7 @@
       <div class="container">
         <div class="row part-one">
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="index.html">
+            <a href="{{ route('index') }}">
               <img
                 class="footer-logo"
                 src="{{ asset('assets/img/church-logo.png') }}"
@@ -306,13 +306,13 @@
             <h2 class="text-white">Quick Links</h2>
 
             <ul class="quick-links">
-              <li><a href="sermons.html">Sermons & Exhortations</a></li>
+              <li><a href="{{ route('sermon') }}">Sermons & Exhortations</a></li>
 
-              <li><a href="our-ministries.html">Our Ministries</a></li>
+              <li><a href="{{ route('our-ministries') }}">Our Ministries</a></li>
 
-              <li><a href="events.html">Our Events</a></li>
+              <li><a href="{{ route('event') }}">Our Events</a></li>
 
-              <li><a href="blog.html">Devotionals</a></li>
+              <li><a href="{{ route('devotionals') }}">Devotionals</a></li>
             </ul>
           </div>
 
@@ -326,11 +326,11 @@
                 </figure>
 
                 <div>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Domestic Violence and Impact on Ministry</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
 
@@ -340,11 +340,11 @@
                 </figure>
 
                 <div>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Support Groups: May the God Be with</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
             </ul>

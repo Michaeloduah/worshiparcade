@@ -68,9 +68,9 @@
           height="200"
         ></canvas>
         <figure><img src="{{ asset('assets/img/icon-white.png') }}" alt="Image" /></figure>
-        <small>Loading</small>
+        <small>Christ is coming soon....</small>
       </div>
-      <!-- end inner -->
+     
     </div>
 
     <!-- Loader End -->
@@ -124,7 +124,7 @@
             <div class="col-lg-12">
               <nav>
                 <div class="logo">
-                  <a href="index.html">
+                  <a href="{{ route('index') }}">
                     <img src="{{ asset('assets/img/church-logo.png') }}" alt="Logo" />
                   </a>
                 </div>
@@ -139,7 +139,7 @@
                       <a href="JavaScript:void(0)">Sermons</a>
 
                       <ul class="sub-menu">
-                        <li><a href="sermons.html">Our Sermons</a></li>
+                        <li><a href="{{ route('sermon') }}">Our Sermons</a></li>
                       </ul>
                     </li>
 
@@ -147,7 +147,7 @@
                       <a href="JavaScript:void(0)">Events</a>
 
                       <ul class="sub-menu">
-                        <li><a href="events.html">Our Events</a></li>
+                        <li><a href="{{ route('event') }}">Our Events</a></li>
                       </ul>
                     </li>
 
@@ -156,16 +156,16 @@
 
                       <ul class="sub-menu">
                         
-                        <li><a href="blog.html">Our Devotions</a></li>
+                        <li><a href="{{ route('devotional') }}">Our Devotions</a></li>
                       </ul>
                     </li>
 
-                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
                   </ul>
                 </div>
 
                 <div class="donation">
-                  <a href="shop.html" class="pr-cart">
+                  <a href="{{ route('shop') }}" class="pr-cart">
                     <svg
                       id="Shoping-bags"
                       enable-background="new 0 0 512 512"
@@ -179,8 +179,6 @@
                       </g>
                     </svg>
                   </a>
-
-                  
 
                   <a
                     href="JavaScript:void(0)"
@@ -206,7 +204,7 @@
 
       <div class="mobile-nav" id="mobile-nav">
         <div class="res-log">
-          <a href="index.html">
+          <a href="{{ route('index') }}">
             <img src="{{ asset('assets/img/church-logo.png') }}" alt="Responsive Logo" />
           </a>
         </div>
@@ -220,7 +218,7 @@
             <a href="JavaScript:void(0)">Sermons</a>
 
             <ul class="sub-menu">
-              <li><a href="sermons.html">Our Sermons</a></li>
+              <li><a href="{{ route('sermon') }}">Our Sermons</a></li>
             </ul>
           </li>
 
@@ -228,7 +226,7 @@
             <a href="JavaScript:void(0)">Events</a>
 
             <ul class="sub-menu">
-              <li><a href="events.html">Our Events</a></li>
+              <li><a href="{{ route('event') }}">Our Events</a></li>
             </ul>
           </li>
 
@@ -238,11 +236,11 @@
             <ul class="sub-menu">
               <!-- Third Level Menu Html Code -->
               
-              <li><a href="404.html">Our Devotions</a></li>
+              <li><a href="{{ route('devotional') }}">Our Devotions</a></li>
             </ul>
           </li>
 
-          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="{{ route('contact') }}">Contact</a></li>
         </ul>
 
         <a href="JavaScript:void(0)" id="res-cross"></a>
@@ -251,104 +249,46 @@
     <!-- Header One Start -->
 
     <!-- Hero One here -->
+  <!-- Hero One here -->
 
-    <section class="hero-one">
-      <div class="hero-one-slider">
-        <div>
-          <img src="{{ asset('assets/img/hero-image.png') }}" alt="hero-one-slider" />
-          <div class="hero-data text-center">
-            <h1>
-              Worship That<br />
-              is Pleasing to God
-            </h1>
-            <p>God has given us power and authority.</p>
-          </div>
-        </div>
-        <div>
-        </div>
-        <div>
+  <section class="hero-one">
+    <div class="hero-one-slider">
+      <div>
+        <img src="{{ asset('assets/images/hero.png') }}" alt="hero-one-slider">
+        <div class="hero-data text-center">
+          <h1>Worship That<br> is Pleasing to God</h1>
+          <p>God has given us power and authority.</p>
         </div>
       </div>
-    </section>
+      <div>
+        <img src="{{ asset('assets/images/hero.png') }}" alt="hero-one-slider">
+        <div class="hero-data text-center">
+          <h1>We Love God<br> We Belive in God</h1>
+          <p>There is no other way except jesus.</p>
+        </div>
+      </div>
+      <div>
+        <img src="{{ asset('assets/images/hero.png') }}" alt="hero-one-slider">
+        <div class="hero-data text-center">
+          <h1>Love God<br> Love Doing Good</h1>
+          <p>We are a church that belives in Jesus christ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- banner part end -->
+
+<!-- Hero One End -->
+
+    
 
     <!-- banner part end -->
 
     <!-- Hero One End -->
 
-    <!-- Fellowship Start -->
-
-    <section class="gap fellowship">
-      <div class="container">
-        <h2 class="text-center mx-auto">
-          We Gather for Inspiration, Fellowship, and Guidance in the of
-          Christian Discipleship.
-        </h2>
-
-        <div class="row">
-          <div
-            class="col-lg-4 col-md-6 col-sm-12"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            data-aos-duration="400"
-          >
-            <div class="offer text-center">
-              <span>
-                <img src="{{ asset('assets/img/wedding.svg') }}" alt="Wedding" />
-              </span>
-
-              <h3><a href="JavaScript:void(0)">Praise & Worship</a></h3>
-
-              <p class="mx-auto">
-                Our church is open and friendly with many social activities. To
-                keep our church running smoothly.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 col-sm-12"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="700"
-          >
-            <div class="offer text-center">
-              <span>
-                <img src="{{ asset('assets/img/pray.svg') }}" alt="Pray" />
-              </span>
-
-              <h3><a href="JavaScript:void(0)">Connect Members</a></h3>
-
-              <p class="mx-auto">
-                Our church is open and friendly with many social activities. To
-                keep our church running smoothly.
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-lg-4 col-md-6 col-sm-12"
-            data-aos="fade-up"
-            data-aos-delay="600"
-            data-aos-duration="800"
-          >
-            <div class="offer text-center">
-              <span>
-                <img src="{{ asset('assets/img/bird.svg') }}" alt="Bird" />
-              </span>
-
-              <h3><a href="JavaScript:void(0)">Parent’s Love</a></h3>
-
-              <p class="mx-auto">
-                Our church is open and friendly with many social activities. To
-                keep our church running smoothly.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fellowship End -->
+   
+   
 
     <!-- About One Start -->
 
@@ -367,7 +307,7 @@ Christains for all round societal relevance (Matt. 5:14,16). MISSION: Positive, 
 Bible-based transformation in Character, Career, Relationship & Family (2Peter 1:3). 
               </p>
 
-              <a href="about-us.html" class="theme-btn">More About us</a>
+              <a href="{{ route('about') }}" class="theme-btn">More About us</a>
             </div>
 
             <div class="about-gallery gallery">
@@ -466,6 +406,96 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
     <!-- About One End -->
 
+     <!-- Donation Start -->
+
+     <section class="donation light-bg overflow-hidden">
+      <div class="container-fluid p-0">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid sideimage"
+              src="{{ asset('assets/img/donation-img.webp') }}"
+              alt="Donation Image"
+            />
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              class="parallax pattren"
+              style="background-image: url({{asset('assets/img/pattren.jpg') }})"
+            ></div>
+            <div class="donation-data">
+              <h2 data-aos="fade-up" data-aos-duration="900">
+                Give Towards our Building project
+              </h2>
+
+              <p data-aos="fade-up" data-aos-duration="1100">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                totam rem ape eaque ipsa quae ab illo inven tore Loaperiam,
+                eaque ipsa quae ab illo invento eaqu e ipsa quae ab ille ab illo
+                inventore.
+              </p>
+
+              <div class="donation-form">
+                <div
+                  class="custom-donation-amount"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                >
+                  <span class="text-white">N</span>
+                  <input
+                    class="donated_amount"
+                    type="number"
+                    placeholder="Custom Amount"
+                  />
+                </div>
+
+                <ul
+                  class="list-unstyled"
+                  data-aos="fade-up"
+                  data-aos-duration="1400"
+                >
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">5000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">10,000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">20,000</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="donating" href="JavaScript:void(0)"
+                      >N<span class="donation_amount">30,000</span></a
+                    >
+                  </li>
+                </ul>
+
+                <a
+                  class="theme-btn"
+                  href="JavaScript:void(0)"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  >Give Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation End -->
+
     <!-- Recent Sermons One Start -->
 
     <section class="gap light-bg recent-sermon-one">
@@ -519,17 +549,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   /></a>
                 </li>
 
-                <li>
-                  <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
-                  /></a>
-                </li>
-
-                <li>
-                  <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
-                  /></a>
-                </li>
+                
               </ul>
             </div>
 
@@ -537,11 +557,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>Rev. Peter Mayah</li>
 
-                <li>Nov 19, 2021</li>
+                <li>Nov 19, 2023</li>
               </ul>
 
               <h3>
-                <a href="sermon-detail.html"
+                <a href="{{ route('sermons') }}"
                   >The Cave of Adullam</a
                 >
               </h3>
@@ -596,17 +616,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   /></a>
                 </li>
 
-                <li>
-                  <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
-                  /></a>
-                </li>
-
-                <li>
-                  <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
-                  /></a>
-                </li>
+                
               </ul>
             </div>
 
@@ -614,12 +624,12 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>Rev. Peter Mayah</li>
 
-                <li>Nov 19, 2021</li>
+                <li>Nov 19, 2023</li>
               </ul>
 
               <h3>
-                <a href="sermon-detail.html"
-                  >Spiritually Reborn As parent’s Children</a
+                <a href="{{ route('sermons') }}"
+                  >Spiritually Reborn </a
                 >
               </h3>
 
@@ -673,17 +683,6 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                   /></a>
                 </li>
 
-                <li>
-                  <a class="s_pdf" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/book.svg') }}" alt="Book"
-                  /></a>
-                </li>
-
-                <li>
-                  <a class="s_music" href="JavaScript:void(0)"
-                    ><img src="{{ asset('assets/img/download.svg') }}" alt="download"
-                  /></a>
-                </li>
               </ul>
             </div>
 
@@ -691,12 +690,12 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               <ul>
                 <li>Rev. Peter Mayah</li>
 
-                <li>Nov 19, 2021</li>
+                <li>Nov 19, 2023</li>
               </ul>
 
               <h3>
-                <a href="sermon-detail.html"
-                  >Spiritually Reborn As parent’s Children</a
+                <a href="{{ route('sermons') }}"
+                  >Spiritually Reborn </a
                 >
               </h3>
 
@@ -709,9 +708,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
           </div>
         </div>
 
-        <div class="d-flex justify-content-center loadmore">
-          <a href="sermons.html" class="theme-btn">Load More</a>
-        </div>
+       
       </div>
     </section>
 
@@ -815,9 +812,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
           </div>
         </div>
 
-        <div class="d-flex justify-content-center loadmore">
-          <a href="JavaScript:void(0)" class="theme-btn">View All Playlist</a>
-        </div>
+       
       </div>
     </section>
 
@@ -844,7 +839,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Morning Glory</a
                   >
                 </h4>
@@ -876,7 +871,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Prayer Rain</a
                   >
                 </h4>
@@ -907,7 +902,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Morning Glory</a
                   >
                 </h4>
@@ -938,7 +933,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Prayer Rain</a
                   >
                 </h4>
@@ -969,7 +964,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Prayer Rain</a
                   >
                 </h4>
@@ -1000,7 +995,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Join us every wednesday for prayers</a
                   >
 
@@ -1032,7 +1027,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Join us every wednesday for prayers</a
                   >
                 </h4>
@@ -1064,7 +1059,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Join us every wednesday for prayers</a
                   >
                 </h4>
@@ -1092,95 +1087,6 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
 
     <!-- Events Carousal End -->
 
-    <!-- Donation Start -->
-
-    <section class="donation light-bg overflow-hidden">
-      <div class="container-fluid p-0">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <img
-              class="img-fluid sideimage"
-              src="{{ asset('assets/img/donation-img.webp') }}"
-              alt="Donation Image"
-            />
-          </div>
-
-          <div class="col-lg-6">
-            <div
-              class="parallax pattren"
-              style="background-image: url({{asset('assets/img/pattren.jpg') }})"
-            ></div>
-            <div class="donation-data">
-              <h2 data-aos="fade-up" data-aos-duration="900">
-                Give Towards our Building project
-              </h2>
-
-              <p data-aos="fade-up" data-aos-duration="1100">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                totam rem ape eaque ipsa quae ab illo inven tore Loaperiam,
-                eaque ipsa quae ab illo invento eaqu e ipsa quae ab ille ab illo
-                inventore.
-              </p>
-
-              <div class="donation-form">
-                <div
-                  class="custom-donation-amount"
-                  data-aos="fade-up"
-                  data-aos-duration="1300"
-                >
-                  <span class="text-white">N</span>
-                  <input
-                    class="donated_amount"
-                    type="number"
-                    placeholder="Custom Amount"
-                  />
-                </div>
-
-                <ul
-                  class="list-unstyled"
-                  data-aos="fade-up"
-                  data-aos-duration="1400"
-                >
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">5000</span></a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">10,000</span></a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">20,000</span></a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="donating" href="JavaScript:void(0)"
-                      >N<span class="donation_amount">30,000</span></a
-                    >
-                  </li>
-                </ul>
-
-                <a
-                  class="theme-btn"
-                  href="JavaScript:void(0)"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  >Give Now</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Donation End -->
 
     <!-- Blog Start -->
 
@@ -1211,11 +1117,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               </figure>
 
               <ul>
-                <li class="date">21 Dec, 2021</li>
+                <li class="date">21 Dec, 2023</li>
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
-                >Public Health By Allowing California Order</a
+              <a href="{{ route('devotionals') }}" class="font-bold"
+                >Finding God in the midst of the storm</a
               >
 
               <p>
@@ -1241,11 +1147,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               </figure>
 
               <ul>
-                <li class="date">21 Dec, 2021</li>
+                <li class="date">21 Dec, 2023</li>
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
-                >Public Health By Allowing California Order</a
+              <a href="{{ route('devotionals') }}" class="font-bold"
+                >Finding God in the midst of the storm</a
               >
 
               <p>
@@ -1271,11 +1177,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
               </figure>
 
               <ul>
-                <li class="date">21 Dec, 2021</li>
+                <li class="date">21 Dec, 2023</li>
               </ul>
 
-              <a href="blog-detail.html" class="font-bold"
-                >Public Health By Allowing California Order</a
+              <a href="{{ route('devotionals') }}" class="font-bold"
+                >Finding God in the midst of the storm</a
               >
 
               <p>
@@ -1287,7 +1193,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
         </div>
 
         <div class="d-flex justify-content-center loadmore">
-          <a href="blog.html" class="theme-btn">View All Devotions</a>
+          <a href="{{ route('devotional') }}" class="theme-btn">View All Devotions</a>
         </div>
       </div>
     </section>
@@ -1306,7 +1212,7 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
       <div class="container">
         <div class="row part-one">
           <div class="col-lg-3 col-md-6 col-sm-12">
-            <a href="index.html">
+            <a href="{{ route('index') }}">
               <img
                 class="footer-logo"
                 src="{{ asset('assets/img/church-logo.png') }}"
@@ -1334,13 +1240,13 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
             <h2 class="text-white">Quick Links</h2>
 
             <ul class="quick-links">
-              <li><a href="sermons.html">Sermons & Exhortations</a></li>
+              <li><a href="{{ route('sermon') }}">Sermons & Exhortations</a></li>
 
-              <li><a href="our-ministries.html">Our Ministries</a></li>
+              <li><a href="{{ route('our-ministries') }}">Our Ministries</a></li>
 
-              <li><a href="events.html">Our Events</a></li>
+              <li><a href="{{ route('event') }}">Our Events</a></li>
 
-              <li><a href="blog.html">Devotionals</a></li>
+              <li><a href="{{ route('devotional') }}">Devotionals</a></li>
             </ul>
           </div>
 
@@ -1354,11 +1260,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 </figure>
 
                 <div>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Domestic Violence and Impact on Ministry</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
 
@@ -1368,11 +1274,11 @@ Bible-based transformation in Character, Career, Relationship & Family (2Peter 1
                 </figure>
 
                 <div>
-                  <a href="event-detail.html"
+                  <a href="{{ route('events') }}"
                     >Support Groups: May the God Be with</a
                   >
 
-                  <p class="post-date">Thrusday, june 4, 2021</p>
+                  <p class="post-date">Thrusday, june 4, 2023</p>
                 </div>
               </li>
             </ul>

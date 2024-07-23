@@ -31,7 +31,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
@@ -65,7 +65,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
@@ -99,7 +99,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
@@ -133,7 +133,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
@@ -167,7 +167,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
@@ -201,7 +201,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
@@ -235,7 +235,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
@@ -269,7 +269,7 @@
                 <p class="text-white">Church Auditorium</p>
 
                 <h4>
-                  <a href="event-detail.html" tabindex="0"
+                  <a href="{{ route('events') }}" tabindex="0"
                     >Join Us Online Every Wednesday</a
                   >
                 </h4>
